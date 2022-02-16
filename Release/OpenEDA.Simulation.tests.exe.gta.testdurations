@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>C:\lab2\EDA2.0\Open EDA 2.0\Release\OpenEDA.Simulation.tests.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="BFuncConstructorTest.TEST01" Duration="1" />
+    <TestDuration Test="BFuncConstructorTest.TEST02" Duration="1" />
+    <TestDuration Test="BFuncConstructorTest.TEST03" Duration="1" />
+    <TestDuration Test="BFuncTest.ANDTEST01" Duration="1" />
+    <TestDuration Test="BFuncTest.STRINGTEST02" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTAND01" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTAND02" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTOR01" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTOR02" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTOR03" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTNAND01" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTNAND02" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTNOR01" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTNOR02" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTNOR03" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTNOT01" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTNOT02" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTBUF01" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTBUF02" Duration="1" />
+    <TestDuration Test="BFuncTest.VALIDITYTEST" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTXOR01" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTXOR02" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTXOR03" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTXNOR01" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTXNOR02" Duration="1" />
+    <TestDuration Test="BFuncTest.TESTXNOR03" Duration="1" />
+    <TestDuration Test="FunctionedTest.TEST01" Duration="1" />
+    <TestDuration Test="ValueTest.ConstructorTest01" Duration="1" />
+    <TestDuration Test="ValueTest.ConstructorTest02" Duration="1" />
+    <TestDuration Test="ValueTest.EQTEST01" Duration="1" />
+    <TestDuration Test="ValueTest.EQTEST02" Duration="1" />
+    <TestDuration Test="ValueTest.EQTEST03" Duration="1" />
+    <TestDuration Test="ValueTest.NETEST01" Duration="1" />
+    <TestDuration Test="ValueTest.NETEST02" Duration="1" />
+    <TestDuration Test="ValueTest.LTTEST01" Duration="1" />
+    <TestDuration Test="ValueTest.LTTEST02" Duration="1" />
+    <TestDuration Test="ValueTest.MagnitudeTEST01" Duration="1" />
+    <TestDuration Test="ValueTest.MagnitudeTEST02" Duration="1" />
+    <TestDuration Test="ValueTest.MagnitudeTEST03" Duration="1" />
+    <TestDuration Test="ValueTest.VALIDTEST01" Duration="1" />
+    <TestDuration Test="ValueTest.VALIDTEST02" Duration="1" />
+    <TestDuration Test="ValueTest.VALIDTEST03" Duration="1" />
+    <TestDuration Test="ValueTest.INCREMENTTEST01" Duration="1" />
+    <TestDuration Test="ValueTest.TEST02" Duration="1" />
+    <TestDuration Test="ValueTest.CARDINALITYTEST" Duration="1" />
+    <TestDuration Test="ValuedTest.CONTRUCTORTEST01" Duration="1" />
+    <TestDuration Test="ValuedTest.CONTRUCTORTEST02" Duration="1" />
+    <TestDuration Test="ValuedTest.CONTRUCTORTEST03" Duration="1" />
+    <TestDuration Test="SimLine_Constructor_Test.TEST01" Duration="1" />
+    <TestDuration Test="SimLine_Constructor_Test.TEST02" Duration="1" />
+    <TestDuration Test="SimLine_Constructor_Test.TEST03" Duration="1" />
+    <TestDuration Test="SimNode_Constructor_Test.TEST01" Duration="1" />
+    <TestDuration Test="SimNode_Test.TEST01" Duration="1" />
+    <TestDuration Test="SimNode_Test.TEST03" Duration="1" />
+    <TestDuration Test="SimulatorTest.c17_exhaustive" Duration="43" />
+    <TestDuration Test="SimulatorTest.c17_X_states" Duration="6" />
+    <TestDuration Test="WideSimulatorTest.c17_exhaustive" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

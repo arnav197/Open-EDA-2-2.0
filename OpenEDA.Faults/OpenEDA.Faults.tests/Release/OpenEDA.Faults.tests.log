@@ -1,0 +1,228 @@
+﻿  test.cpp
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\internal\gtest-port.h(996): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\internal\gtest-port.h(997): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\internal\gtest-port.h(998): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\internal\gtest-port.h(999): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\internal\gtest-port.h(1000): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(600): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(605): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(610): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(615): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(620): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(625): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(632): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(639): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(646): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(653): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(661): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(878): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+  c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(878): note: see reference to class template instantiation 'testing::internal::TuplePolicy<TupleT>::tuple_element<I>' being compiled
+  c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(886): note: see reference to class template instantiation 'testing::internal::TuplePolicy<TupleT>' being compiled
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(882): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1'
+c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\faultstructures.hpp(58): warning C4250: 'FaultyLine<FaultyValue<bool>>': inherits 'Faulty<_valueType>::Faulty<_valueType>::value' via dominance
+          with
+          [
+              _valueType=FaultyValue<bool>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\fault.hpp(194): note: see declaration of 'Faulty<_valueType>::value'
+          with
+          [
+              _valueType=FaultyValue<bool>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\tests\faultystructure_test.hpp(20): note: see reference to class template instantiation 'FaultyLine<FaultyValue<bool>>' being compiled
+c:\lab2\eda2.0\open eda 2.0\openeda.simulation\includes\value.hpp(56): warning C4305: 'default argument': truncation from 'unsigned __int64' to '_width'
+          with
+          [
+              _width=bool
+          ]
+c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\faultyvalue.hpp(58): warning C4305: 'default argument': truncation from 'unsigned __int64' to '_primitive'
+          with
+          [
+              _primitive=bool
+          ]
+c:\lab2\eda2.0\open eda 2.0\openeda.faults\tests\faultyvalue_test.hpp(240): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+c:\lab2\eda2.0\open eda 2.0\openeda.simulation\includes\valuevectorfunctions.hpp(214): warning C4305: 'argument': truncation from 'unsigned __int64' to '_primitive'
+          with
+          [
+              _primitive=bool
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.simulation\includes\valuevectorfunctions.hpp(196): note: while compiling class template member function 'std::vector<_valueType,std::allocator<_Ty>> ValueVectorFunction<_valueType>::incrementingConstants(size_t)'
+          with
+          [
+              _valueType=FaultyValue<bool>,
+              _Ty=FaultyValue<bool>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.simulation\includes\valuevectorfunctions.hpp(141): note: see reference to function template instantiation 'std::vector<_valueType,std::allocator<_Ty>> ValueVectorFunction<_valueType>::incrementingConstants(size_t)' being compiled
+          with
+          [
+              _valueType=FaultyValue<bool>,
+              _Ty=FaultyValue<bool>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\tests\faultsimulator_test.hpp(252): note: see reference to class template instantiation 'ValueVectorFunction<FaultyValue<bool>>' being compiled
+c:\lab2\eda2.0\open eda 2.0\openeda.simulation\includes\valuevectorfunctions.hpp(215): warning C4305: 'argument': truncation from 'unsigned __int64' to '_primitive'
+          with
+          [
+              _primitive=bool
+          ]
+c:\lab2\eda2.0\open eda 2.0\openeda.simulation\includes\valuevectorfunctions.hpp(216): warning C4305: 'argument': truncation from 'unsigned __int64' to '_primitive'
+          with
+          [
+              _primitive=bool
+          ]
+c:\lab2\eda2.0\open eda 2.0\openeda.simulation\includes\valuevectorfunctions.hpp(217): warning C4305: 'argument': truncation from 'unsigned __int64' to '_primitive'
+          with
+          [
+              _primitive=bool
+          ]
+c:\lab2\eda2.0\open eda 2.0\openeda.simulation\includes\valuevectorfunctions.hpp(218): warning C4305: 'argument': truncation from 'unsigned __int64' to '_primitive'
+          with
+          [
+              _primitive=bool
+          ]
+c:\lab2\eda2.0\open eda 2.0\openeda.simulation\includes\valuevectorfunctions.hpp(219): warning C4305: 'argument': truncation from 'unsigned __int64' to '_primitive'
+          with
+          [
+              _primitive=bool
+          ]
+c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(875): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\random(6448): note: see declaration of 'std::tr1'
+  c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(961): note: see reference to class template instantiation 'testing::internal::TuplePolicy<Tuple>' being compiled
+          with
+          [
+              Tuple=std::tuple<>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest-printers.h(601): note: see reference to function template instantiation 'void testing::internal::PrintTupleTo<std::tuple<>>(const T &,std::ostream *)' being compiled
+          with
+          [
+              T=std::tuple<>
+          ]
+c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\fault.hpp(300): warning C4297: 'Fault<_valueType>::~Fault': function assumed not to throw an exception but does
+          with
+          [
+              _valueType=FaultyValue<bool>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\fault.hpp(300): note: destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\fault.hpp(298): note: while compiling class template member function 'Fault<_valueType>::~Fault(void)'
+          with
+          [
+              _valueType=FaultyValue<bool>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\tests\fault_test.hpp(48): note: see reference to function template instantiation 'Fault<_valueType>::~Fault(void)' being compiled
+          with
+          [
+              _valueType=FaultyValue<bool>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\tests\faultgenerator_test.hpp(31): note: see reference to class template instantiation 'Fault<_valueType>' being compiled
+          with
+          [
+              _valueType=FaultyValue<bool>
+          ]
+c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\faultstructures.hpp(58): warning C4250: 'FaultyLine<FaultyValue<unsigned __int64>>': inherits 'Faulty<_valueType>::Faulty<_valueType>::value' via dominance
+          with
+          [
+              _valueType=FaultyValue<unsigned __int64>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\fault.hpp(194): note: see declaration of 'Faulty<_valueType>::value'
+          with
+          [
+              _valueType=FaultyValue<unsigned __int64>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.parser\includes\parser.hpp(253): note: see reference to class template instantiation 'FaultyLine<FaultyValue<unsigned __int64>>' being compiled
+  c:\lab2\eda2.0\open eda 2.0\openeda.parser\includes\parser.hpp(252): note: while compiling class template member function '_lineType *Parser<_lineType,FaultyNode<FaultyValue<unsigned __int64>>,FaultyValue<unsigned __int64>>::newLine(std::string)'
+          with
+          [
+              _lineType=FaultyLine<FaultyValue<unsigned __int64>>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\tests\faultsimulator_test.hpp(149): note: see reference to class template instantiation 'Parser<FaultyLine<FaultyValue<unsigned __int64>>,FaultyNode<FaultyValue<unsigned __int64>>,FaultyValue<unsigned __int64>>' being compiled
+c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\fault.hpp(300): warning C4297: 'Fault<_valueType>::~Fault': function assumed not to throw an exception but does
+          with
+          [
+              _valueType=FaultyValue<unsigned __int64>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\fault.hpp(300): note: destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\fault.hpp(298): note: while compiling class template member function 'Fault<_valueType>::~Fault(void)'
+          with
+          [
+              _valueType=FaultyValue<unsigned __int64>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1849): note: see reference to class template instantiation 'Fault<_valueType>' being compiled
+          with
+          [
+              _valueType=FaultyValue<unsigned __int64>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1848): note: while compiling class template member function 'void std::vector<std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0>,std::allocator<std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0>>>::_Destroy(std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0> *,std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0> *)'
+          with
+          [
+              _Ty=Fault<FaultyValue<unsigned __int64>> *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1915): note: see reference to function template instantiation 'void std::vector<std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0>,std::allocator<std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0>>>::_Destroy(std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0> *,std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0> *)' being compiled
+          with
+          [
+              _Ty=Fault<FaultyValue<unsigned __int64>> *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xhash(1178): note: see reference to class template instantiation 'std::vector<std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0>,std::allocator<std::_List_unchecked_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>,std::_Iterator_base0>>>' being compiled
+          with
+          [
+              _Ty=Fault<FaultyValue<unsigned __int64>> *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\unordered_set(71): note: see reference to class template instantiation 'std::_Hash<std::_Uset_traits<_Kty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=Fault<FaultyValue<unsigned __int64>> *,
+              _Hasher=std::hash<Fault<FaultyValue<unsigned __int64>> *>,
+              _Keyeq=std::equal_to<Fault<FaultyValue<unsigned __int64>> *>,
+              _Alloc=std::allocator<Fault<FaultyValue<unsigned __int64>> *>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\faultsimulator.hpp(132): note: see reference to class template instantiation 'std::unordered_set<Fault<_valueType> *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<_Kty>>' being compiled
+          with
+          [
+              _valueType=FaultyValue<unsigned __int64>,
+              _Kty=Fault<FaultyValue<unsigned __int64>> *
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\tests\faultsimulator_test.hpp(154): note: see reference to class template instantiation 'FaultSimulator<FaultyValue<unsigned __int64>>' being compiled
+c:\lab2\eda2.0\open eda 2.0\openeda.simulation\includes\eventqueue.hpp(313): warning C4018: '<': signed/unsigned mismatch
+  c:\lab2\eda2.0\open eda 2.0\openeda.simulation\includes\eventqueue.hpp(305): note: while compiling class template member function 'bool EventQueue<_valueType>::process(void)'
+          with
+          [
+              _valueType=FaultyValue<bool>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\faultsimulator.hpp(276): note: see reference to function template instantiation 'bool EventQueue<_valueType>::process(void)' being compiled
+          with
+          [
+              _valueType=FaultyValue<bool>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\includes\faultsimulator.hpp(241): note: while compiling class template member function 'std::vector<_valueType,std::allocator<_Ty>> FaultSimulator<_valueType>::applyStimulus(Circuit *,std::vector<_Ty,std::allocator<_Ty>>,EventQueue<_valueType>,std::vector<SimulationNode<FaultyValue<bool>> *,std::allocator<SimulationNode<FaultyValue<bool>>*>>,std::vector<SimulationNode<FaultyValue<bool>> *,std::allocator<SimulationNode<FaultyValue<bool>>*>>,std::vector<bool,std::allocator<bool>>)'
+          with
+          [
+              _valueType=FaultyValue<bool>,
+              _Ty=FaultyValue<bool>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\tests\faultsimulator_test.hpp(81): note: see reference to function template instantiation 'std::vector<_valueType,std::allocator<_Ty>> FaultSimulator<_valueType>::applyStimulus(Circuit *,std::vector<_Ty,std::allocator<_Ty>>,EventQueue<_valueType>,std::vector<SimulationNode<FaultyValue<bool>> *,std::allocator<SimulationNode<FaultyValue<bool>>*>>,std::vector<SimulationNode<FaultyValue<bool>> *,std::allocator<SimulationNode<FaultyValue<bool>>*>>,std::vector<bool,std::allocator<bool>>)' being compiled
+          with
+          [
+              _valueType=FaultyValue<bool>,
+              _Ty=FaultyValue<bool>
+          ]
+  c:\lab2\eda2.0\open eda 2.0\openeda.faults\tests\faultsimulator_test.hpp(40): note: see reference to class template instantiation 'FaultSimulator<FaultyValue<bool>>' being compiled
+  OpenEDA.Structures.lib.lib(Connection.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+  Generating code
+  Finished generating code
+  OpenEDA.Faults.tests.vcxproj -> C:\lab2\EDA2.0\Open EDA 2.0\Release\OpenEDA.Faults.tests.exe

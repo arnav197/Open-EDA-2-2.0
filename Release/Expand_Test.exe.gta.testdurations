@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>C:\lab2\EDA2.0\Open EDA 2.0\Release\Expand_Test.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseName.TestName" Duration="1" />
+    <TestDuration Test="Expandtest.c432_test" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

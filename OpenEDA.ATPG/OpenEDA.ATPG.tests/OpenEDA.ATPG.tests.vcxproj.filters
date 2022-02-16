@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="test.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{f6d27170-a6ed-4b24-b230-631494fed75d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{d438999f-75dd-40c6-a244-9f40755252e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <Filter>Misc</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\tests\ATPG.Tests.h" />
+    <ClInclude Include="..\tests\ATPGTests.hpp">
+      <Filter>Tests</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

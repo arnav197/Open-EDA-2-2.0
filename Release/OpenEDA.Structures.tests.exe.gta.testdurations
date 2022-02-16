@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>C:\lab2\EDA2.0\Open EDA 2.0\Release\OpenEDA.Structures.tests.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="DeleteTest.c17DeleteTest" Duration="151" />
+    <TestDuration Test="DeleteTest.b14DeleteTest" Duration="274" />
+    <TestDuration Test="CopyTest.c17CopyTest" Duration="2" />
+    <TestDuration Test="Circuit_Test.TEST01" Duration="1" />
+    <TestDuration Test="Circuit_Test.TEST02" Duration="1" />
+    <TestDuration Test="Circuit_Test.TEST03" Duration="1" />
+    <TestDuration Test="Circuit_Test.TEST04" Duration="1" />
+    <TestDuration Test="Circuit_Test.TEST05" Duration="1" />
+    <TestDuration Test="Circuit_Test.TEST06" Duration="1" />
+    <TestDuration Test="Circuit_Test.TEST07" Duration="1" />
+    <TestDuration Test="Circuit_Test.TEST08" Duration="1" />
+    <TestDuration Test="Circuit_Test.TEST09" Duration="1" />
+    <TestDuration Test="Circuit_Test.TEST11" Duration="1" />
+    <TestDuration Test="Connecting_Test_Constructor.Connecting_Test_Constructor_01" Duration="1" />
+    <TestDuration Test="Connecting_Test.Connecting_Test_Constructor_02" Duration="1" />
+    <TestDuration Test="Connecting_Test.Connecting_Test_INPUTS_01" Duration="1" />
+    <TestDuration Test="Connecting_Test.Connecting_Test_OUTPUTS_01" Duration="1" />
+    <TestDuration Test="Connecting_Test.Connecting_Test_REMOVEIP_01" Duration="1" />
+    <TestDuration Test="Connecting_Test.Connecting_Test_REMOVEIP_02" Duration="1" />
+    <TestDuration Test="Connecting_Test.Connecting_Test_REMOVEIP_03" Duration="1" />
+    <TestDuration Test="Connecting_Test.Connecting_Test_REMOVEOP_01" Duration="1" />
+    <TestDuration Test="Connecting_Test.Connecting_Test_REMOVEOP_02" Duration="1" />
+    <TestDuration Test="Connecting_Test.Connecting_Test_REMOVEOP_03" Duration="1" />
+    <TestDuration Test="Connecting_Test.Connecting_Test_ADDOP_01" Duration="1" />
+    <TestDuration Test="Connecting_Test.Connecting_Test_ADDIP_01" Duration="1" />
+    <TestDuration Test="Connection_Test_Constructor.Connection_Test_Constructor_01" Duration="1" />
+    <TestDuration Test="Connection_Test_Constructor.Connection_Test_Constructor_02" Duration="1" />
+    <TestDuration Test="Connection_Test.Connection_Test_Constructor_03" Duration="1" />
+    <TestDuration Test="Connection_Test.Connection_Test_Constructor_04" Duration="1" />
+    <TestDuration Test="LevelTest.inputLevelConstTEST01" Duration="1" />
+    <TestDuration Test="LevelTest.inputLevelConstTEST02" Duration="1" />
+    <TestDuration Test="LevelTest.inputLevelConstTEST03" Duration="1" />
+    <TestDuration Test="LevelTest.Levelized_outputLevelConst_Test01" Duration="1" />
+    <TestDuration Test="LevelTest.Levelized_outputLevel_Test" Duration="1" />
+    <TestDuration Test="LevelTest.Levelized_inputLevel_Test" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

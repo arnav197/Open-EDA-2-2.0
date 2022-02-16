@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>C:\lab2\EDA2.0\Open EDA 2.0\Debug\OpenEDA.TPI.tests.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="C17Tests.AllTPsGenerated" Duration="1" />
+    <TestDuration Test="C17Tests.C17ExhaustiveControl" Duration="1" />
+    <TestDuration Test="C17Tests.C17ExhaustiveObserve" Duration="1" />
+    <TestDuration Test="C17Tests.C17ExhaustiveInvert" Duration="1" />
+    <TestDuration Test="C17Tests.C17ExhaustiveObserveFaultCoverage" Duration="1" />
+    <TestDuration Test="C17Tests.C17ExhaustiveControlFaultCoverage" Duration="1" />
+    <TestDuration Test="C432Tests.ObservePointTests" Duration="1" />
+    <TestDuration Test="C17_Moghaddam_Tests.C17_Moghaddam_Values" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
