@@ -168,6 +168,5 @@ private:
 };
 
 
-
 #endif   //COP_TPI_Structures_h
 

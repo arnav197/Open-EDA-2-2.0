@@ -22,31 +22,37 @@
 #include <ctime>
 
 
-//Genearal settings.
-#define PRIMITIVE unsigned long long int //The underlying data primitive used for simulation.
-#define SIZEOFPRIMITIVE 64 //I.e., 64 for unsigned long long int, 1 for bool
+//General settings.
+#define PRIMITIVE unsigned long long int   //The underlying data primitive used for simulation.
+#define SIZEOFPRIMITIVE 64   //I.e., 64 for unsigned long long int, 1 for bool
 
 //TPI Settings
-#define TPITIMELIMIT 108000 //The time limit for TPI, in seconds, i.e., 3600 -> 1 hour
-#define TPLIMIT 0.01 //The TP limit in terms of a percentage of nodes,s, i.e., 0.01 -> 1%
-#define PRETPIVEC 10 //Number of vectors to apply before TPI (to eleminate easy-to-detect faults from the TPI algorithm).
+#define TPITIMELIMIT 108000   //The time limit for TPI, in seconds, i.e., 3600 -> 1 hour
+#define TPLIMIT 0.01   //The TP limit in terms of a percentage of nodes,s, i.e., 0.01 -> 1%
+#define PRETPIVEC 10   //Number of vectors to apply before TPI (to eleminate easy-to-detect faults from the TPI algorithm).
 
 //For fault simulation
-#define MAXVEC 16384 //The maximum total number of vectors to simulate across ALL iterations. I.e., 64*128=16384
+
+#define MAXVEC 16384   //The maximum total number of vectors to simulate across ALL iterations. I.e., 64*128=16384
 //-> NOTE: the total number of vectors to simulate per benchmark will always be less than this number.
 //-> NOTE: the simulation primitive size ("SIZEOFPRIMITIVE") is accounted for, so do not adjust this number based on the primitive size.
 //--> E.g., if "unsigned long long int" is used (and thus "SIZEOFPRIMITIVE" is 64), and "MAXVEC" is 128, two 64-bit vectors will be applied automatically.
+
 #define MAXITER 128 //The maximum number of fault simulations to perform (the average fault coverage is taken).
 //-> E.g., if "1" is given, a single fault simulation will be performed.
 //-> E.g., if "2" is given, two fault simulations will be performed and the average of the two fault coverages will be printed.
+
 #define MAXFAULTCOVERAGE 99.0 //If no fault coverage limit is given, fault simulation will be performed until this fault coverage is obtained by at least one circuit.
 //-> I.e., 99.0 = 99% 
 //-> NOTE: in practice, this will be overwritten to 100% (no limit) or a specific limit.
+
 #define SIMTIMELIMIT 1000 //The time, in seconds, to limit fault simulation to.
 //-> I.e., 1000 -> one thousand seconds
 //NOTE: this is more powerful than setting other limits (i.e., "MAXVEC" and "MAXITER"). This allows you to gather as much data as you can, time allowed.
+
 #define TPRATIO 2 //If testpoints are given for fault simulation, what fraction of vectors will TPs be enabled for.
 //-> I.e., 2 -> 1/2 of all vectors.
+
 
 //Convenience: this are for easier code later on.
 #define VALUETYPE FaultyValue<PRIMITIVE>
@@ -95,6 +101,7 @@ void garbage(_container _trashCan) {
 	}
 }
 
+
 // compare two output name
 template <class type>
 bool connectingSortFunction(type* i, type* j) {
@@ -104,6 +111,7 @@ bool connectingSortFunction(type* i, type* j) {
 	std::string jName = jOutput->name();
 	return iName.compare(jName) < 0;
 }
+
 
 //order Pi
 template <class type>
@@ -127,6 +135,7 @@ std::set<GENERIC_TESTPOINT*> chooseTPs(Circuit* _circuit, size_t _pre_sim,  bool
 	//FIRST, set limits after simulating easy-to-detect faults.
 	FaultSimulator<VALUETYPE> fs(!_stuck_at); 
 	fs.setFaults(FaultGenerator<VALUETYPE>::allFaults(_circuit, _stuck_at));
+	
 	for (size_t i = 0; i < _pre_sim; i++) {
 		std::vector<VALUETYPE> inputVec = ValueVectorFunction<VALUETYPE>::random(_circuit->pis().size());
 		fs.applyStimulus(_circuit, inputVec);
@@ -138,6 +147,7 @@ std::set<GENERIC_TESTPOINT*> chooseTPs(Circuit* _circuit, size_t _pre_sim,  bool
 	tpi.timeLimit(TPITIMELIMIT);
 	tpi.testpointLimit(_circuit->nodes().size()*TPLIMIT);
 
+	
 	// THIRD, generate all TPs
 	TPGenerator<CONTROLTP, NODETYPE, LINETYPE, VALUETYPE> TPgenerator_control;
 	std::set<GENERIC_TESTPOINT*> all_control_tps = TPgenerator_control.allTPs(_circuit);
@@ -148,7 +158,8 @@ std::set<GENERIC_TESTPOINT*> chooseTPs(Circuit* _circuit, size_t _pre_sim,  bool
 	all_tps.push_back(all_observe_tps);
 	
 
-	//FORTH, select TPs (the long part)
+
+	//FOURTH, select TPs (the long part)
 	clock_t start2, finish2;
 	start2 = clock();
 	
@@ -157,6 +168,7 @@ std::set<GENERIC_TESTPOINT*> chooseTPs(Circuit* _circuit, size_t _pre_sim,  bool
 	finish2 = clock() - start2;
 	double totaltime2 = finish2 / (float)CLOCKS_PER_SEC;
 	printf("%f\t", totaltime2);
+
 
 	//FOURTH, clean up (create a copy of chosen TPs and delete the originals)
 	for (std::set<GENERIC_TESTPOINT*> tp_set : all_tps) {
@@ -201,29 +213,36 @@ std::set<GENERIC_TESTPOINT*> chooseTPs(Circuit* _circuit, size_t _pre_sim,  bool
 
 
 
-#define MAXVECPERITER 10000000000 //The maximnum number of vectors allowed for any single fault simulation iteration.
+#define MAXVECPERITER 10000000000  //The maximnum number of vectors allowed for any single fault simulation iteration.
 //-> Do not overwrite this value: it is used only if no limit is given, and therefore should be a very large value.
 //Simulate until...
 // 1) The maximum number of vectors is reached.
 // 2) The time limit is reached.
 // 3) One benchmark reaches the max fault coverage limit.
 // 3a) If this is reached, another iteration will be strated. If the other two limits reached in the middle of a non-first iteration, the results of the last iteration will be discarded.
-//
 // @return The number of vectors simulated per iteration.
+
 size_t faultSimulate(
+	
 	std::vector<Circuit*> _circuits,
+	
 	std::vector<std::unordered_set<FAULTTYPE*>> _faults,
+	
 	float _FCLimit = MAXFAULTCOVERAGE,
 	bool _tdf = false,
 	size_t _vecLimit = MAXVECPERITER,
 	size_t _itrLimit = MAXITER,
+	
 	std::vector<std::set<GENERIC_TESTPOINT*>> _testpoints = std::vector< std::set<GENERIC_TESTPOINT*>>()
 ) {
 	PRPG<VALUETYPE> prpg(_circuits.at(0)->pis().size());
 
 	//PREPARE fault simulators and ordered PIs for each circuit.
+	
 	std::vector<FaultSimulator<VALUETYPE>*> faultSimulators;
+	
 	std::vector<std::vector<SimulationNode<VALUETYPE>*>> pis;
+	
 	for (size_t i = 0; i < _circuits.size(); i++) {
 		Circuit* circuit = _circuits.at(i);
 		FaultSimulator<VALUETYPE> * faultsimulator = new FaultSimulator<VALUETYPE>(_tdf); faultsimulator->setFaults(_faults.at(i));
@@ -231,7 +250,7 @@ size_t faultSimulate(
 		pis.push_back(orderedPis<SimulationNode<VALUETYPE>>(circuit));
 	}
 
-	//PREPARE Accumulated fault coverages (across all iterations)
+	//PREPARE Accumulated fault coverages (across all iterations).
 	std::vector<float> faultCoverages = std::vector<float>(_circuits.size(), 0.0);
 
 	size_t iteration_number = 0;
