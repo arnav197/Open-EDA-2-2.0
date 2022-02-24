@@ -158,7 +158,6 @@ std::set<GENERIC_TESTPOINT*> chooseTPs(Circuit* _circuit, size_t _pre_sim,  bool
 	all_tps.push_back(all_observe_tps);
 	
 
-
 	//FOURTH, select TPs (the long part)
 	clock_t start2, finish2;
 	start2 = clock();
@@ -250,6 +249,7 @@ size_t faultSimulate(
 		pis.push_back(orderedPis<SimulationNode<VALUETYPE>>(circuit));
 	}
 
+
 	//PREPARE Accumulated fault coverages (across all iterations).
 	std::vector<float> faultCoverages = std::vector<float>(_circuits.size(), 0.0);
 
@@ -258,6 +258,7 @@ size_t faultSimulate(
 	size_t vec_per_iter = _vecLimit;
 	clock_t start, finish;
 	start = clock();
+
 
 	//FAULT SIMULATION
 	while (iteration_number < _itrLimit) {
@@ -380,6 +381,7 @@ void evalCircuit(std::string _circuitFile) {
 	printf("%d\t", circuit_no_tpi->pos().size()); //POs
 	printf("%d\t", circuit_no_tpi->nodes().size()); //Nodes
 
+
 	//Generate faults before TPI: otherwise fault coverage comparisons are unfare.
 	//These faults will be deleted at the end of fault simulation.
 	std::vector < std::unordered_set<FAULTTYPE*>> safs = {
@@ -392,6 +394,7 @@ void evalCircuit(std::string _circuitFile) {
 		FaultGenerator<VALUETYPE>::allFaults(circuit_cop_tpi_saf,false),
 		FaultGenerator<VALUETYPE>::allFaults(circuit_cop_tpi_tdf,false)
 	};
+
 
 	//Perform fault simulation on the original circuit to (try to) reach 95% fault coverage.
 	size_t numVec = faultSimulate(std::vector<Circuit*>(
@@ -420,6 +423,7 @@ void evalCircuit(std::string _circuitFile) {
 	faultSimulate(allCircuits, safs, 100.0, false, numVec, MAXITER, allTestpoints); //Do all safs, use no FC limit, set a vector limit based on the previous 95% fault coverage, repeat iterations and use average FC, time permitting.
 	faultSimulate(allCircuits, tdfs, 100.0, true, numVec, MAXITER, allTestpoints); //Do all tdfs, ...
 
+
 	//CLEANUP (faults are already deleted)
 	garbage<std::set< GENERIC_TESTPOINT*>>(cop_tpi_saf_tps);
 	garbage<std::set< GENERIC_TESTPOINT*>>(cop_tpi_tdf_tps);
@@ -429,8 +433,9 @@ void evalCircuit(std::string _circuitFile) {
 	for (auto safList : safs) {
 		garbage<std::unordered_set<FAULTTYPE*>>(safList);
 	}
-	garbage<std::vector<Circuit*>>(allCircuits); //Circuits must be deleted after faults.
+	garbage<std::vector<Circuit*>>(allCircuits);  //Circuits must be deleted after faults.
 }
+
 
 //expand circuit, for every gate, no more than 2 input, no more than 2 fanout
 Circuit * expand(Circuit *_c)
@@ -441,13 +446,15 @@ Circuit * expand(Circuit *_c)
 	return _c;
 }
 
+
 //generte a sub-circuit based on seleted line, and subcircut size is _limit, _c must be expanded
 Circuit * Subcircuit(Circuit* _c, Levelized* _line, size_t _limit) {
 	Window<VALUETYPE, NODETYPE, LINETYPE> window;
 	Circuit* subcircuit = window.Getwindow(_c, _line, _limit);
 	return subcircuit;
 }
-//
+
+
 //generage input feature, _c is entire circuit not subcircuit
 std::vector< float>Features(Circuit* _c, Levelized* _line, int _limit) {
 	Window<VALUETYPE, NODETYPE, LINETYPE> window;
