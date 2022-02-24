@@ -45,7 +45,6 @@ public:
 	 *
 	 * @param _name The name of the Line
 	 */
-	
 	COP_TPI_Line(std::string _name) :
 		COPLine<_width>(_name),
 		FaultyLine<_width>(_name),
@@ -151,7 +150,6 @@ public:
 		_flag = false;
 	};
 
-	
 	void setflag(bool flag)
 	{
 		_flag = flag;
