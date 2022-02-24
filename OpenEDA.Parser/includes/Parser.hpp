@@ -47,7 +47,7 @@
   *                  must have a constructor which takes in a Function
   *                  pointer, a set of _lineTypes for inputs, and a set of
   *                  _lineTypes for outputs.
- * @param _valueType The type of value being simulated, e.g., Value/FaultyValue
+  * @param _valueType The type of value being simulated, e.g., Value/FaultyValue
   */
 template <class _lineType, class _nodeType, class _valueType>
 class Parser {
@@ -331,10 +331,11 @@ size_t Parser<_lineType, _nodeType, _valueType>::ParseLine(std::string _textLine
 			throw "Your _nodeType constructor is flawed: it most likely needs to call 'Connecting'.";
 		}
 
-		//If you need the followign code, your _nodeType needs to call "Connecting" in its constructor.
-		//for (_lineType* inputLine : intputLines) {
-		//	inputLine->addOutput(newNode);
-		//}
+		/*If you need the followign code, your _nodeType needs to call "Connecting" in its constructor.
+		for (_lineType* inputLine : intputLines) {
+			inputLine->addOutput(newNode);
+			}
+		*/
 
 		this->nodes_.emplace(newNode);
 
@@ -357,15 +358,17 @@ void Parser<_lineType, _nodeType, _valueType>::MergeLines() {
 			printf("%s \n", base->name().c_str());
 			//printf("WARNING: A line in circuit doesn't drive anything \n");
 		}
-		if (lines.size() == 1) { //Same non-fanout line, so delete.
+		if (lines.size() == 1) {	//Same non-fanout line, so delete.
 			_lineType* toDelete = *lines.begin();
-			if (toDelete->outputs().size() == 0) {//Sanity check, this should not happen
+			if (toDelete->outputs().size() == 0) {	//Sanity check, this should not happen
 				throw "Problem: multiple lines have no output.";
 			}
 			base->addOutput(*toDelete->outputs().begin());
-			toDelete->outputs(std::unordered_set<Connecting*>()); //This shouldn't be necessary, but was added in order to clear COP values consistently.
+			toDelete->outputs(std::unordered_set<Connecting*>()); 
+			//This shouldn't be necessary, but was added in order to clear COP values consistently.
+			
 			toDelete->inputs(std::unordered_set<Connecting*>());
-			delete toDelete; //This will automatically delete its connections.
+			delete toDelete;	//This will automatically delete its connections.
 			continue;
 		}
 		//All other lines are fanouts.

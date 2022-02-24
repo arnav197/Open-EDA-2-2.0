@@ -205,7 +205,8 @@ std::set<GENERIC_TESTPOINT*> chooseTPs(Circuit* _circuit, size_t _pre_sim,  bool
 	/*std::unordered_set<Fault<VALUETYPE>*> toDelete = fs.clearFaults();
 	for (Fault<VALUETYPE>* fault : toDelete) {
 		delete fault;
-	}*/
+	}
+	*/
 
 	return chosen_tps;
 }
@@ -213,18 +214,18 @@ std::set<GENERIC_TESTPOINT*> chooseTPs(Circuit* _circuit, size_t _pre_sim,  bool
 
 
 #define MAXVECPERITER 10000000000  //The maximnum number of vectors allowed for any single fault simulation iteration.
-//-> Do not overwrite this value: it is used only if no limit is given, and therefore should be a very large value.
-//Simulate until...
-// 1) The maximum number of vectors is reached.
-// 2) The time limit is reached.
-// 3) One benchmark reaches the max fault coverage limit.
-// 3a) If this is reached, another iteration will be strated. If the other two limits reached in the middle of a non-first iteration, the results of the last iteration will be discarded.
-// @return The number of vectors simulated per iteration.
+/*-> Do not overwrite this value: it is used only if no limit is given, and therefore should be a very large value.
+Simulate until...
+1) The maximum number of vectors is reached.
+2) The time limit is reached.
+3) One benchmark reaches the max fault coverage limit.
+3a) If this is reached, another iteration will be strated. If the other two limits reached in the middle of a non-first iteration, the results of the last iteration will be discarded.
+@return The number of vectors simulated per iteration.
+*/
 
 size_t faultSimulate(
 	
 	std::vector<Circuit*> _circuits,
-	
 	std::vector<std::unordered_set<FAULTTYPE*>> _faults,
 	
 	float _FCLimit = MAXFAULTCOVERAGE,
@@ -267,10 +268,10 @@ size_t faultSimulate(
 		bool tpActivated = false;
 		while (
 			((cur_best_fault_coverage < _FCLimit) || iteration_number != 0) && //Max fault coverage reached (which we only care if we do not have a vec_per_iter set).
-			(((clock() - start) / CLOCKS_PER_SEC) < SIMTIMELIMIT) && //Time limit reached
-			(num_vec_applied < MAXVEC) &&  //Total (across all iterations) vec limit reached.
-			(iter_vec_applied < vec_per_iter) //Vec limit (for this iteration) reached
-			) {//Apply a vector if all conditions are met 
+			(((clock() - start) / CLOCKS_PER_SEC) < SIMTIMELIMIT) &&     //Time limit reached
+			(num_vec_applied < MAXVEC) &&       //Total (across all iterations) vec limit reached.
+			(iter_vec_applied < vec_per_iter)   //Vec limit (for this iteration) reached
+			) {  //Apply a vector if all conditions are met 
 			//debug printf("iter %d\t vec %d\n", iteration_number, num_vec_applied);
 			std::vector<VALUETYPE> inputVector = prpg.load();
 
@@ -373,9 +374,9 @@ size_t faultSimulate(
 void evalCircuit(std::string _circuitFile) {
 	//FIRST, parse all circuits and get generate circuit information.
 	Parser<LINETYPE, NODETYPE, VALUETYPE> parser;
-	Circuit* circuit_no_tpi = parser.Parse(_circuitFile.c_str());// cop circuit
-	Circuit* circuit_cop_tpi_saf = parser.Parse(_circuitFile.c_str());// orginal circuit
-	Circuit* circuit_cop_tpi_tdf = parser.Parse(_circuitFile.c_str());// orginal circuit
+	Circuit* circuit_no_tpi = parser.Parse(_circuitFile.c_str());		// cop circuit
+	Circuit* circuit_cop_tpi_saf = parser.Parse(_circuitFile.c_str());	// orginal circuit
+	Circuit* circuit_cop_tpi_tdf = parser.Parse(_circuitFile.c_str());	// orginal circuit
 	printf("%s\t", _circuitFile.c_str()); //BENCH
 	printf("%d\t", circuit_no_tpi->pis().size()); //PIs
 	printf("%d\t", circuit_no_tpi->pos().size()); //POs
@@ -400,10 +401,10 @@ void evalCircuit(std::string _circuitFile) {
 	size_t numVec = faultSimulate(std::vector<Circuit*>(
 		{ circuit_no_tpi }),  //No-TPI circuit.
 		std::vector<std::unordered_set<FAULTTYPE*>>({ safs.at(0) }), //The no-TPI circuit's faults.
-		95.0, //The goal fault coverage
-		false, //stuck-at fault simulation.
-		MAXVEC, //Do not limit the number of vectors
-		1 //Limit to a single iteration.
+		95.0,	//The goal fault coverage
+		false,	//stuck-at fault simulation.
+		MAXVEC,	//Do not limit the number of vectors
+		1 		//Limit to a single iteration.
 	);
 
 	//Perform TPI (TPs are actiated during fault simulation.
