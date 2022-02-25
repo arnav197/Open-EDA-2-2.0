@@ -124,7 +124,6 @@ public:
 	std::unordered_set<Fault<_valueType>*> clearFaults();
 
 
-
 protected:
 	/*
 	 * All undetected faults.
@@ -310,8 +309,6 @@ inline void FaultSimulator<_valueType>::resetFaults() {
 	this->undetectedFaults_.insert(this->detectedFaults_.begin(), this->detectedFaults_.end());
 	this->detectedFaults_.clear();
 }
-
-
 
 template<class _valueType>
 inline std::unordered_set<Fault<_valueType>*> FaultSimulator<_valueType>::detectedFaults() {
