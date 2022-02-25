@@ -19,7 +19,7 @@ YS.Working.Solution.sln: VS code file combining and binding all 'sub-projects' t
 	
 	-Connection: This class models any object which connects to other objects through Connections.
 	
-	-Level: This class is for structures where the arangement of Connecting objects implies a "level" relative to a given object is craeted.
+	-Level: This class is for structures where the arangement of Connecting objects implies a "level" relative to a given object is created.
 	
 	-Circuit: A representation of a Circuit.
 
@@ -55,7 +55,7 @@ YS.Working.Solution.sln: VS code file combining and binding all 'sub-projects' t
 	
 ->COP: Create COP structure (COP line and COP node); calcultate Controllability and observability information.
 	
-	-COPSturctures: It includes COP, COPLine and COPNode. COP is a pure vitrual class. Inheriting objects must designate how controllability and obserability are calculated. COPLine is a Line which holds information necessary to perform COP. COPNode is a Node which holds information necessary to perform COP.
+	-COPSturctures: It includes COP, COPLine and COPNode. COP is a pure virtual class. Inheriting objects must designate how controllability and obserability are calculated. COPLine is a Line which holds information necessary to perform COP. COPNode is a Node which holds information necessary to perform COP.
 
 ->TPI: Generate a list of testpoints for the circuit; active/deactive a TP(control tp, observe tp, invert tp); perform TPI algorithm for selecting TPs.
 	
@@ -63,7 +63,7 @@ YS.Working.Solution.sln: VS code file combining and binding all 'sub-projects' t
 	
 	-Moghaddam_Structures: This object has the ability to "propogate" faults by way of the Moghaddam algorithm. For the specifics of the algorithm, see the article: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=835591
 	
-	-Testpoint:  An object capible of modifying a circuit when activated. This class is pure virtual. Other methods must define the actions corresponding to activation. A testpoint is "valued" in the sense that it will return value of its location (presuming it is active).
+	-Testpoint:  An object capable of modifying a circuit when activated. This class is pure virtual. Other methods must define the actions corresponding to activation. A testpoint is "valued" in the sense that it will return value of its location (presuming it is active).
 	
 	-Testpoint_control: A control testpoint (both control-0 and control-1).
 	
@@ -75,7 +75,7 @@ YS.Working.Solution.sln: VS code file combining and binding all 'sub-projects' t
 	
 	-TPI: An algroithm which implements iterative test point insertion (TPI). This is a pure-virtual class describing the features of any TPI algorithm.
 	
-	-TPI_COP: COP-based TPI. Method is simliar as H.-C. Tsai, K.-T. Cheng, C.-J. Lin and S. Bhawmik. A hybrid algorithm for test point selection for scan-based BIST. Proc. of 34th Design Automation Conference, pages 478-483,1997.
+	-TPI_COP: COP-based TPI. Method is similar as H.-C. Tsai, K.-T. Cheng, C.-J. Lin and S. Bhawmik. A hybrid algorithm for test point selection for scan-based BIST. Proc. of 34th Design Automation Conference, pages 478-483,1997.
 
 ->PRPG: A peudo-random pattern generator (PRPG). 
 	
