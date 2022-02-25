@@ -211,7 +211,6 @@ std::set<GENERIC_TESTPOINT*> chooseTPs(Circuit* _circuit, size_t _pre_sim,  bool
 	return chosen_tps;
 }
 
-
 #define MAXVECPERITER 10000000000  //The maximnum number of vectors allowed for any single fault simulation iteration.
 /*-> Do not overwrite this value: it is used only if no limit is given, and therefore should be a very large value.
 Simulate until...
@@ -347,6 +346,7 @@ size_t faultSimulate(
 
 		iteration_number++;
 	}
+	
 	//for (size_t i = 0; i < _circuits.size(); i++) {
 	//	faultCoverages[i] = (faultCoverages.at(i) / (float) iteration_number); //Average the fault coverages.
 	//}
