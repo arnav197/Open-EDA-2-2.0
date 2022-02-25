@@ -9,10 +9,10 @@
  *
  */
 
-#include"gtest/gtest.h"
-#include"FaultSimulator.h"
-#include"FaultGenerator.h"
-#include"Parser.h"
+#include "gtest/gtest.h"
+#include "FaultSimulator.h"
+#include "FaultGenerator.h"
+#include "Parser.h"
 
 class FSimTest : public ::testing::Test {
 public:

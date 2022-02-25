@@ -36,6 +36,7 @@ class FaultyLine;
 template <class _valueType>
 class Fault : public Evented<_valueType> {
 public:
+	
 	/*
 	 * The default fault has no (nullptr) location and a default value.
 	 */

@@ -8,10 +8,10 @@
  *
  */
 
-#include"gtest/gtest.h"
-#include"FaultSimulator.hpp"
-#include"FaultGenerator.hpp"
-#include"Parser.hpp"
+#include "gtest/gtest.h"
+#include "FaultSimulator.hpp"
+#include "FaultGenerator.hpp"
+#include "Parser.hpp"
 #include "ValueVectorFunctions.hpp"
 #include "FaultyValue.hpp"
 

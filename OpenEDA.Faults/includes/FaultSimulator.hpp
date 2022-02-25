@@ -195,7 +195,7 @@ inline FaultSimulator<_valueType>::~FaultSimulator() {
  *
  * @param _fault The Fault to check if it is relevant BEFORE the next vector
  *               is applied.
- * @return Is the Fault releveant?
+ * @return Is the Fault relevant?
  */
 template<class _valueType>
 inline bool preVectorFaultRelevant(Fault<_valueType>* _fault) {

@@ -61,8 +61,7 @@ public:
 	};
 
 
-	
-	void setflag(bool flag)
+		void setflag(bool flag)
 	{
 		_flag = flag;
 	};
@@ -71,11 +70,9 @@ public:
 		return _flag;
 	}
 
-
 private:
 	bool _flag = false;
 };
-
 
 
 /*

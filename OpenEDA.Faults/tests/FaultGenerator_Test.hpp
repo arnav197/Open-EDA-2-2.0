@@ -8,13 +8,14 @@
  *
  */
 
-#include"gtest/gtest.h"
-#include"FaultGenerator.hpp"
+#include "gtest/gtest.h"
+#include "FaultGenerator.hpp"
 #include "FaultStructures.hpp"
-#include"Parser.hpp"
+#include "Parser.hpp"
 #include "FaultyValue.hpp"
 
 #include <iostream>
+
 class FaultGeneratorTest : public ::testing::Test {
 public:
 	void SetUp() override {

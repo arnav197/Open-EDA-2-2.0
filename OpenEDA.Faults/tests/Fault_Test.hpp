@@ -8,11 +8,11 @@
  *
  */
 
-#include"gtest/gtest.h"
+#include "gtest/gtest.h"
 #include "FaultStructures.hpp"
 #include "FaultGenerator.hpp"
 #include "Parser.hpp"
-#include"Fault.hpp"
+#include "Fault.hpp"
 #include "FaultyValue.hpp"
 
 class FaultTest : public ::testing::Test {
@@ -73,7 +73,6 @@ class FaultyTest : public ::testing::Test {
 protected:
 	void SetUp() override {
 	}
-
 	FaultyLine<FaultyValue<bool>>* fl = new FaultyLine<FaultyValue<bool>>("Faulty Line 1");
 	Fault<FaultyValue<bool>>* f = new Fault<FaultyValue<bool>>(fl, FaultyValue<bool>(0));
 };

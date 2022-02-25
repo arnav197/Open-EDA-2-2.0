@@ -8,16 +8,17 @@
 #include "Testpoint_invert.hpp"
 #include "TPI.hpp"
 #include "TPI_COP.hpp"
-#include"Expand.hpp"
+#include "Expand.hpp"
 #include "Value.hpp"
 #include "SimulationStructures.hpp"
 #include "ValueVectorFunctions.hpp"
 #include "COP_TPI_Structures.hpp"
 #include "PRPG.hpp"
-#include"tpi_power.hpp"
-#include"Window.hpp"
+#include "tpi_power.hpp"
+
+#include "Window.hpp"
 #include <vector>
-#include<set>
+#include <set>
 #include <iostream>
 #include <ctime>
 
@@ -129,7 +130,6 @@ std::vector<type*> orderedPis(Circuit* _circuit) {
 }
 
 
-
 std::set<GENERIC_TESTPOINT*> chooseTPs(Circuit* _circuit, size_t _pre_sim,  bool _stuck_at) {
 
 	//FIRST, set limits after simulating easy-to-detect faults.
@@ -210,7 +210,6 @@ std::set<GENERIC_TESTPOINT*> chooseTPs(Circuit* _circuit, size_t _pre_sim,  bool
 
 	return chosen_tps;
 }
-
 
 
 #define MAXVECPERITER 10000000000  //The maximnum number of vectors allowed for any single fault simulation iteration.
@@ -370,7 +369,6 @@ size_t faultSimulate(
 }
 
 
-
 void evalCircuit(std::string _circuitFile) {
 	//FIRST, parse all circuits and get generate circuit information.
 	Parser<LINETYPE, NODETYPE, VALUETYPE> parser;
@@ -462,7 +460,6 @@ std::vector< float>Features(Circuit* _c, Levelized* _line, int _limit) {
 	std::vector< float> features = window.getdata(_c, _line, _limit);
 	return features;
 }
-
 
 
 int main(int argc, const char* argv[]) {
