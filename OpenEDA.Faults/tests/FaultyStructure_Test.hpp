@@ -8,14 +8,14 @@
  *
  */
 
-#include"gtest/gtest.h"
-#include"FaultStructures.hpp"
+#include "gtest/gtest.h"
+#include "FaultStructures.hpp"
 #include "FaultyValue.hpp"
 
 class FaultyLineTest : public ::testing::Test {
 public:
+	
 	void SetUp() override {
-
 	}
 	FaultyLine<FaultyValue<bool>> fl;
 	std::string name = fl.name();
