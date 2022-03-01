@@ -2,7 +2,7 @@
 #The project is divided into several sub-projects
 
 Bench: Collection of converted netlist versions of ISCAS'85 and ITC'99 benchmarks. 
-Update: The ISCAS89 benchmarks are added along with the perl script used to make them 'pseudo-combonational'.
+Update: The ISCAS89 benchmarks are added too along with the perl script used to make them 'pseudo-combonational'.
 
 ->Pseudo-Combinational Benchmark: The ITC'99 benchmarks are made 'pseudo-combinational' by replacing each flip-flop with an input (from the flip-flop output) and an output (to the flip-flop input). For more information on the ITC'99 benchmarks, visit https://www.cerc.utexas.edu/itc99-benchmarks/bendoc1.html. For reference regarding ISCAS'85, visit https://davidkebo.com/documents/iscas85.pdf.
 
