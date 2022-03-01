@@ -69,91 +69,91 @@ TEST_F(BFuncTest, ANDTEST01) {
 
 //std::string string() const;
 TEST_F(BFuncTest, STRINGTEST02) {
-	EXPECT_EQ(not->string(), "not");//The string should be completely converted to lowercase.
+	EXPECT_EQ(not->string(), "not");	// The string should be completely converted to lowercase.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTAND01) {
-	val = and->evaluate(val11);
-	EXPECT_EQ(1,val.magnitude() );
+	val = and->evaluate(val11);		// AND Gate is evaluated with an input of 1,1. 
+	EXPECT_EQ(1,val.magnitude() );	// The output should be 1.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTAND02) {
-	val = and->evaluate(val00);//And is evaluated with an input vector of 0,0.
-	EXPECT_EQ(0, val.magnitude());//And with an input vector of 0,0 should return an output of 0.
+	val = and->evaluate(val00);		// AND Gate is evaluated with an input vector of 0,0.
+	EXPECT_EQ(0, val.magnitude());	// The output should be 0.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTOR01) {
-	val = or->evaluate(val10);
-	EXPECT_EQ(1, val.magnitude());
+	val = or->evaluate(val10);		// Test OR Gate with an input vector of 1,0.
+	EXPECT_EQ(1, val.magnitude());	// The output should be 1.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTOR02) {
-	val = or ->evaluate(val00); // Test OR Gate with an input vector 0f 0,0.
-	EXPECT_EQ(0, val.magnitude()); //Should return an output of 0.
+	val = or ->evaluate(val00);		// Test OR Gate with an input vector of 0,0.
+	EXPECT_EQ(0, val.magnitude());	// The output should be 0.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTOR03) {
-	val = or ->evaluate(val01);
-	EXPECT_EQ(1, val.magnitude());
+	val = or ->evaluate(val01);		// Test OR Gate with an input vector of 0,1.
+	EXPECT_EQ(1, val.magnitude());	// The output should be 1.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTNAND01) {
-	val = nand->evaluate(val01); //Evaluate the NAND Gate with an input vector of 0,1.
-	EXPECT_EQ(1, val.magnitude()); //The expected output should be 1.
+	val = nand->evaluate(val01);	// Evaluate the NAND Gate with an input vector of 0,1.
+	EXPECT_EQ(1, val.magnitude());	// The expected output should be 1.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTNAND02) {
-	val = nand->evaluate(val11);
-	EXPECT_EQ(0, val.magnitude());
+	val = nand->evaluate(val11);	// Evaluate the NAND Gate with an input vector of 1,1.
+	EXPECT_EQ(0, val.magnitude());	// The expected output should be 0.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTNOR01) {
-	val = nor->evaluate(val11);
-	EXPECT_EQ(0, val.magnitude());
+	val = nor->evaluate(val11);		// Evaluate the input to the NOR Gate with an input vector of 1,1.
+	EXPECT_EQ(0, val.magnitude());	// The output should be 0.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTNOR02) {
-	val = nor->evaluate(val10);
-	EXPECT_EQ(0, val.magnitude());
+	val = nor->evaluate(val10);		// Evaluate the input to the NOR Gate with an input vector of 1,0.
+	EXPECT_EQ(0, val.magnitude());	// The output should be 0.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTNOR03) {
-	val = nor->evaluate(val00); //Evaluate the input to the NOR gate with a vector of 0,0.
-	EXPECT_EQ(1, val.magnitude()); //The output should be 1.
+	val = nor->evaluate(val00);		// Evaluate the input to the NOR Gate with a vector of 0,0.
+	EXPECT_EQ(1, val.magnitude());	// The output should be 1.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
-TEST_F(BFuncTest, TESTNOT01) {
-	val = not->evaluate(vals1);
-	EXPECT_EQ(0, val.magnitude());
+TEST_F(BFuncTest, TESTNOT01) {		
+	val = not->evaluate(vals1);		// Test NOT Gate with an input vector of 1.
+	EXPECT_EQ(0, val.magnitude());	// The output should be 0.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTNOT02) {
-	val = not->evaluate(vals0);// Test NOT Gate with an input vector 0f 0.
-	EXPECT_EQ(1, val.magnitude());// Expected output should be 1.
+	val = not->evaluate(vals0);		// Test NOT Gate with an input vector 0f 0.
+	EXPECT_EQ(1, val.magnitude());	// Expected output should be 1.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTBUF01) {
-	val = buf->evaluate(vals1);
-	EXPECT_EQ(1, val.magnitude());
+	val = buf->evaluate(vals1);		// Evaluate the Buffer input with a value of 1.
+	EXPECT_EQ(1, val.magnitude());	// Expected output should be 1.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTBUF02) {
-	val = buf->evaluate(vals0);//Evaluate the Buffer input with a value of zero.
-	EXPECT_EQ(0, val.magnitude());//The output should be zero.
+	val = buf->evaluate(vals0);		// Evaluate the Buffer input with a value of zero.
+	EXPECT_EQ(0, val.magnitude());	// The output should be zero.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
@@ -164,37 +164,37 @@ TEST_F(BFuncTest, VALIDITYTEST) {
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTXOR01) {
-	val = xor->evaluate(val11);
-	EXPECT_EQ(0, val.magnitude());
+	val = xor->evaluate(val11);		 // Evaluate the XOR gate with an input vector of 1,1.
+	EXPECT_EQ(0, val.magnitude());	 // Expect an output of 0.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTXOR02) {
-	val = xor->evaluate(val10);////Evaluate the XNOR gate with an input vector of 1,0.
-	EXPECT_EQ(1, val.magnitude());//Expect an output of 1.
+	val = xor->evaluate(val10);		// Evaluate the XOR gate with an input vector of 1,0.
+	EXPECT_EQ(1, val.magnitude());	// Expect an output of 1.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTXOR03) {
-	val = xor->evaluate(val00);
-	EXPECT_EQ(0, val.magnitude());
+	val = xor->evaluate(val00);		// Evaluate the XOR gate with an input vector of 0,0.
+	EXPECT_EQ(0, val.magnitude());	// Expect an output of 0.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTXNOR01) {
-	val = xnor->evaluate(val11);
-	EXPECT_EQ(1, val.magnitude());
+	val = xnor->evaluate(val11);	// Evaluate the XNOR gate with an input vector of 1,1.
+	EXPECT_EQ(1, val.magnitude());	// Expect an ouput of 1.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTXNOR02) {
-	val = xnor->evaluate(val10); //Evaluate the XNOR gate with an input vector of 0,1.
-	EXPECT_EQ(0, val.magnitude());// Expect an output of 0.
+	val = xnor->evaluate(val10);	// Evaluate the XNOR gate with an input vector of 1,0.
+	EXPECT_EQ(0, val.magnitude());	// Expect an output of 0.
 }
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTXNOR03) {
-	val = xnor->evaluate(val00);
-	EXPECT_EQ(1, val.magnitude());
+	val = xnor->evaluate(val00);	// Evaluate the XNOR gate with an input vector of 0,0.
+	EXPECT_EQ(1, val.magnitude());	// Expect an output of 1.
 }
 
