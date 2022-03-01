@@ -8,8 +8,8 @@
  *
  */
 
-#include"gtest/gtest.h"
-#include"EventQueue.h"
+#include "gtest/gtest.h"
+#include "EventQueue.h"
 
 //EventQueue();
 TEST(EventQueue_Constructor_Test, TEST01) {

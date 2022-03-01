@@ -8,7 +8,7 @@
  *
  */
 
-#include"gtest/gtest.h"
+#include "gtest/gtest.h"
 #include "Value.hpp"
 
 class ValueTest : public ::testing::Test {
@@ -113,6 +113,8 @@ TEST_F(ValueTest, LTTEST02) {
 	EXPECT_EQ(true, val1.magnitude());
 	EXPECT_TRUE(val0 < val1);
 }
+
+// ----- Few lines of debugged/omitted code ahead ----
 
 //DELETE incorrect (changed) behavior
 //bool operator < (const Value<T>& _other) const;
@@ -222,6 +224,7 @@ public:
 	Valued<Value<bool>> valueded = Valued<Value<bool>>(nullptr, val);
 	Valued<Value<bool>> valued1  = Valued<Value<bool>>(nullptr, val1);
 };
+
 //Valued();
 TEST_F(ValuedTest, CONTRUCTORTEST01) {
 

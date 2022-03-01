@@ -8,8 +8,8 @@
  *
  */
 
-#include"gtest/gtest.h"
-#include"SimulationStructures.hpp"
+#include "gtest/gtest.h"
+#include "SimulationStructures.hpp"
 #include "EventQueue.hpp"
 
 

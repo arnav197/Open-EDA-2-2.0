@@ -2,8 +2,11 @@
 #The project is divided into several sub-projects
 
 Bench: Collection of converted netlist versions of ISCAS'85 and ITC'99 benchmarks. 
+Update: The ISCAS89 benchmarks are added along with the perl script used to make them 'pseudo-combonational'.
 
-->Pseudo-Combinational Benchmark: The ITC'99 benchmarks are made “pseudo-combinational” by replacing each flip-flop with an input (from the flip-flop output) and an output (to the flip-flop input). For more information on the ITC'99 benchmarks, visit https://www.cerc.utexas.edu/itc99-benchmarks/bendoc1.html. For reference regarding ISCAS'85, visit https://davidkebo.com/documents/iscas85.pdf.
+->Pseudo-Combinational Benchmark: The ITC'99 benchmarks are made 'pseudo-combinational' by replacing each flip-flop with an input (from the flip-flop output) and an output (to the flip-flop input). For more information on the ITC'99 benchmarks, visit https://www.cerc.utexas.edu/itc99-benchmarks/bendoc1.html. For reference regarding ISCAS'85, visit https://davidkebo.com/documents/iscas85.pdf.
+
+
 
 PACKAGES: GoogleTest code. Refer to https://github.com/google/googletest for more.
 
@@ -37,7 +40,7 @@ YS.Working.Solution.sln: VS code file combining and binding all 'sub-projects' t
 
 ->Simulation: Create simulation structure (simulation line and simulation node), generate a simultor to stimulus circuit and observe outputs.
 	
-	-EvenQueue: Events are the entries which make up an event queue. Each event contains 1) an evented object which needs to be updated and 2) the prioirity (e.g., the input level in a circuit) of the event relative to other events.
+	-EventQueue: Events are the entries which make up an event queue. Each event contains 1) an evented object which needs to be updated and 2) the priority (e.g., the input level in a circuit) of the event relative to other events.
 	
 	-Function: A representation of a output-generating function. A function takes in a vector of inputs and translates them into an output.
 	
