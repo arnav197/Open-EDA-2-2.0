@@ -1,10 +1,11 @@
 #pragma once
 
 #include "gtest/gtest.h"
-#include"Expand.hpp"
+#include "Expand.hpp"
 #include "SimulationStructures.hpp"
 #include "Parser.hpp"
-#include"Circuit.h"
+#include "Circuit.h"
+
 class ExpandTest : public::testing::Test {
 public:
 	void SetUp() override {
@@ -40,7 +41,6 @@ TEST_F(ExpandTest, TEST02)
 	{
 		EXPECT_LE(n->outputs().size(), 2);
 	}
-
 
 }
 
