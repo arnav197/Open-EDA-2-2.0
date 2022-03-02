@@ -154,6 +154,9 @@ TEST_F(ValueTest, LTTEST02) {
 //	EXPECT_TRUE(val1.possiblyDifferent(val0_iv, val1));
 //}
 
+
+// MAGNITUDE TESTS:
+
 //T magnitude(T _magnitude) ;
 TEST_F(ValueTest, MagnitudeTEST01) {
 	EXPECT_EQ(true, val1.magnitude());
@@ -174,6 +177,8 @@ TEST_F(ValueTest, MagnitudeTEST03) {
 	EXPECT_EQ(false, val1.magnitude());
 }
 
+
+// VALID TESTS:
 
 //bool valid(bool _valid);
 TEST_F(ValueTest, VALIDTEST01) {
@@ -196,6 +201,9 @@ TEST_F(ValueTest, VALIDTEST03) {
 	EXPECT_FALSE(val1_iv.valid());
 }
 
+
+// INCREMENT TESTS:
+
 //bool increment();
 TEST_F(ValueTest, INCREMENTTEST01) {
 	ASSERT_TRUE(val1.increment());
@@ -207,6 +215,9 @@ TEST_F(ValueTest, TEST02) {
 	ASSERT_FALSE(val0.increment());
 	EXPECT_EQ(true, val0.magnitude());
 }
+
+
+//CARDINALITY TEST(S):
 
 //unsigned long int cardinality() const;
 TEST_F(ValueTest, CARDINALITYTEST) {
@@ -224,6 +235,9 @@ public:
 	Valued<Value<bool>> valueded = Valued<Value<bool>>(nullptr, val);
 	Valued<Value<bool>> valued1  = Valued<Value<bool>>(nullptr, val1);
 };
+
+
+// CONSTRUCTOR TESTS:
 
 //Valued();
 TEST_F(ValuedTest, CONTRUCTORTEST01) {
