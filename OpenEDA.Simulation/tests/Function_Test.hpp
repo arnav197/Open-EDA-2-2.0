@@ -74,7 +74,7 @@ TEST_F(BFuncTest, STRINGTEST02) {
 
 //virtual Value<bool> evaluate(std::vector<Value<bool>> _vector) const;
 TEST_F(BFuncTest, TESTAND01) {
-	val = and->evaluate(val11);		// AND Gate is evaluated with an input of 1,1. 
+	val = and->evaluate(val11);		// AND Gate is evaluated with an input vector of 1,1. 
 	EXPECT_EQ(1,val.magnitude() );	// The output should be 1.
 }
 
