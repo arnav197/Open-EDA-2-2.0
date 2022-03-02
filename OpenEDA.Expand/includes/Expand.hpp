@@ -11,16 +11,17 @@
 #define Expand_h
 #include "Circuit.h"
 #include "Function.hpp"
-#include"SimulationNet.hpp"
-#include"SimulationStructures.hpp"
+#include "SimulationNet.hpp"
+#include "SimulationStructures.hpp"
 #include "SimulationNet.hpp"
 #include "Level.h"
-#include"Net.hpp"
+#include "Net.hpp"
 #include "Connection.h"
 #include <string>
 #include <utility> 
 #include <set>
 #include <map>
+ 
  /*
   * An Expand tool to convert circuit into a certain format.
   *
@@ -206,7 +207,6 @@ bool Expand<_valueType, _nodeType, _lineType>::Expand_out_Check(Circuit*_c, Leve
 	}
 
 }
-
 
 
 
