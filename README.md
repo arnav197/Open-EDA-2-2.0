@@ -112,8 +112,8 @@ YS.Working.Solution.sln: VS code file combining and binding all 'sub-projects' t
 
 ->Expand: Covert a circuit into a certain format, but not change the function. 
 	
-	-Expand: An object to covert circuit gate inputs and fanouts, which makes gate input number no more than two and gate fan-out number no more than two.
+	-Expand: An object to convert circuit gate inputs and fanouts, which makes gate input number no more than two and gate fan-out number no more than two.
 	
-->Window: Generate a sub-circuit and get input features for Airtificial Neural Networks.
+->Window: Generate a sub-circuit and get input features for Artificial Neural Networks.
 	
-	-Window: Extract a sub-circuit from a benchmark circuit; generage Aritificial Neural Network input features in vectorized format.
+	-Window: Extract a sub-circuit from a benchmark circuit; generate Artificial Neural Network input features in vectorized format.
