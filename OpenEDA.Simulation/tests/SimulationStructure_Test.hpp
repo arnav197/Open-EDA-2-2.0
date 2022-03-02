@@ -56,7 +56,7 @@ public:
 };
 //SimulationNode()
 TEST_F(SimNode_Test, TEST01) {
-	EXPECT_EQ(val1.magnitude() , sn->function()->evaluate(vec_val).magnitude()); // Check if  the NAND gate evaluated with a vector of 1,0 returns an output of 1.
+	EXPECT_EQ(val1.magnitude() , sn->function()->evaluate(vec_val).magnitude()); // Check if the NAND gate evaluated with a vector of 1,0 returns an output of 1.
 }
 
 //SimulationNode()
