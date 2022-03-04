@@ -52,6 +52,9 @@ TEST_F(Connecting_Test, Connecting_Test_OUTPUTS_01) {
 
 }
 
+
+// Connection Tests for removing input.
+
 //void Connecting::removeInput(Connecting * _rmv)
 TEST_F(Connecting_Test, Connecting_Test_REMOVEIP_01) {
 
@@ -74,6 +77,9 @@ TEST_F(Connecting_Test, Connecting_Test_REMOVEIP_03) {
 	EXPECT_ANY_THROW(p->removeInput(c3););
 
 }
+
+
+// Connection Tests for removing output.
 
 //void Connecting::removeOutput(Connecting * _rmv)
 TEST_F(Connecting_Test, Connecting_Test_REMOVEOP_01) {
@@ -98,7 +104,7 @@ TEST_F(Connecting_Test, Connecting_Test_REMOVEOP_03) {
 }
 
 //virtual void addOutput(Connecting* _add);
-TEST_F(Connecting_Test, Connecting_Test_ADDOP_01) {
+TEST_F(Connecting_Test, Connecting_Test_ADDOP_01) {				//adding Output
 	
 	p->addOutput(c3);
 	a_check = p->outputs();
@@ -106,7 +112,7 @@ TEST_F(Connecting_Test, Connecting_Test_ADDOP_01) {
 }
 
 //virtual void addInput(Connecting* _add);
-TEST_F(Connecting_Test, Connecting_Test_ADDIP_01) {
+TEST_F(Connecting_Test, Connecting_Test_ADDIP_01) {				//adding Input
 	c = { c1,c3 };
 	p->addInput(c3);
 	a_check = p->inputs();
