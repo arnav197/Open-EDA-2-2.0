@@ -110,7 +110,7 @@ YS.Working.Solution.sln: VS code file combining and binding all 'sub-projects' t
 	
 	-DFronier: A D-Frontier is a type of "Goal" used during SAT. In effect, this turns SAT into an ATPG algorithm, with the specific ATPG being dictated by the type of Backtracer algorithm inside SAT.
 
-->Expand: Covert a circuit into a certain format, but not change the function. 
+->Expand: Convert a circuit into a certain format, but not change the function. 
 	
 	-Expand: An object to convert circuit gate inputs and fanouts, which makes gate input number no more than two and gate fan-out number no more than two.
 	
