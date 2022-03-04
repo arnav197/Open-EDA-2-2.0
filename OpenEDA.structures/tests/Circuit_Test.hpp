@@ -8,8 +8,8 @@
  *
  */
 
-#include"gtest/gtest.h"
-#include"Circuit.h"
+#include "gtest/gtest.h"
+#include "Circuit.h"
 #include<unordered_set>
 
 #include "Simulator.hpp"
