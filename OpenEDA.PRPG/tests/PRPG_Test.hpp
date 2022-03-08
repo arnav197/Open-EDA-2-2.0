@@ -107,7 +107,7 @@ TEST_F(PRPGTest, BinaryValuesTest) {
 }
 
 //This test is no longer implmented becuase of long long int accuracy issues: the excel spreadsheet which generated
-//the testing values converted floating to int, and hterefore large numbers were not accurate. However, results
+//the testing values converted floating to int, and therefore large numbers were not accurate. However, results
 //were manually checked.
 //TEST_F(PRPGTest, PRPGStateTest) {
 //	for (size_t i = 0; i < prpgValues.size(); i++) {

@@ -12,7 +12,7 @@
 #include <unordered_set>
 
 #include "Value.hpp"
-#include "ValueVectorFunctions.hpp" //shift
+#include "ValueVectorFunctions.hpp"	//shift
 #include "Function.hpp" //XOR
 
 #ifndef PRPG_H
@@ -91,7 +91,7 @@ private:
 	 * Since bits are shifted right, these positions are tranlated to 62, 60, and 59 ("63" is the MSB which "wraps around").
 	 * //DELETE: old external LFSR //The standard XORs bits for the 31-bit lfsr are 0 and 3.
 	 */
-	//DELTE: 31-bit external lfsr //unsigned long int exp_ = 0x00000009;
+	//DELETE: 31-bit external lfsr //unsigned long int exp_ = 0x00000009;
 	unsigned long long int exp_ = 0x5800000000000000;
 	
 };
@@ -136,6 +136,7 @@ inline std::vector<_valueType> PRPG<_valueType>::increment() {
 	//Value<_primitive> newValue = function.evaluate(XORedValues);
 	//newValue = ValueVectorFunction<bool>::shift(this->lfsr_, newValue);
 	//ValueVectorFunction<bool>::shift(this->last_, newValue);
+
 
 	//Find the "new bit"
 	//DELETE This is for external type LFSRs, which are not as efficient for
