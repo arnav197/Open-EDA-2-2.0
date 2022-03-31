@@ -1,0 +1,3 @@
+C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/CMakeFiles/OpenEDA_executable.dir
+C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
