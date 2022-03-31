@@ -12,13 +12,13 @@
 #include"gtest/gtest.h"
 
 
-#include "Parser.hpp"
-#include "ATPGStructures.hpp"
-#include "DFrontier.hpp"
-#include "SAT.hpp"
-#include "Fault.hpp"
-#include "FaultyValue.hpp"
-#include "FaultGenerator.hpp"
+#include "parser/Parser.hpp"
+#include "atpg/ATPGStructures.hpp"
+#include "atpg/DFrontier.hpp"
+#include "sat/SAT.hpp"
+#include "faults/Fault.hpp"
+#include "faults/FaultyValue.hpp"
+#include "faults/FaultGenerator.hpp"
 
 #define PRIMITIVE bool
 #define VALUE_TYPE FaultyValue<PRIMITIVE>
