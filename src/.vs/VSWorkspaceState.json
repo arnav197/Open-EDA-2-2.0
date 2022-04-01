@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PACKAGES\\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0",
+    "\\PACKAGES\\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\\build",
+    "\\PACKAGES\\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\\build\\native",
+    "\\PACKAGES\\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\\build\\native\\include",
+    "\\PACKAGES\\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\\build\\native\\include\\gtest",
+    "\\PACKAGES\\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-static.1.8.0",
+    "\\parser",
+    "\\prpg",
+    "\\simulation"
+  ],
+  "SelectedNode": "\\PACKAGES",
+  "PreviewInSolutionExplorer": false
+}

@@ -12,10 +12,10 @@
 #define DFrontier_h
 
 
-#include "Fault.hpp"
-#include "Goal.hpp"
-#include "Tracer.hpp"
-#include "SATStructures.hpp"
+#include "faults/Fault.hpp"
+#include "sat/Goal.hpp"
+#include "trace/Tracer.hpp"
+#include "sat/SATStructures.hpp"
 
 /*
  * A D-Frontier is a type of "Goal" used during SAT. In effect, this turns SAT

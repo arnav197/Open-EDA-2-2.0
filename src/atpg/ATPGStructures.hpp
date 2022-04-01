@@ -11,8 +11,8 @@
 #ifndef ATPGStructures_h
 #define ATPGStructures_h
 
-#include "SATStructures.hpp"
-#include "FaultStructures.hpp"
+#include "sat/SATStructures.hpp"
+#include "faults/FaultStructures.hpp"
 
  //Forward declaration
 template <class _valueType>
