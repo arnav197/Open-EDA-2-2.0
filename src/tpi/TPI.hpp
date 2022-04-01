@@ -16,8 +16,8 @@
 #include <limits>
 #include <ctime>
 
-#include "Testpoint.hpp"
-#include "Circuit.h"
+#include "tpi/Testpoint.hpp"
+#include "structures/Circuit.h"
 
  /*
   * An algroithm which implements iterative test point insertion (TPI).

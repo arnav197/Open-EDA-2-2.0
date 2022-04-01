@@ -1,8 +1,8 @@
 #pragma once
 
-#include "TPI_C17.hpp"
-#include "TPI_C432.hpp"
-#include "TPI_Moghaddam_C17.hpp"
+#include "tpi/TPI_C17.hpp"
+#include "tpi/TPI_C432.hpp"
+#include "tpi/TPI_Moghaddam_C17.hpp"
 
 //DELETE obsolete
 //#include "Testpoint_Invert_Test.hpp"

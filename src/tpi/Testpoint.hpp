@@ -12,9 +12,9 @@
 #ifndef Testpoint_h
 #define Testpoint_h
 
-#include "Circuit.h"
-#include "FaultStructures.hpp"
-#include "Value.hpp"
+#include "structures/Circuit.h"
+#include "faults/FaultStructures.hpp"
+#include "simulation/Value.hpp"
 
 
 /*

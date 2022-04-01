@@ -13,11 +13,11 @@
 #ifndef TPI_POWER_h
 #define TPI_POWER_h
 #include<cmath>
-#include "TPI.hpp"
-#include "COP_fault_calculator.hpp"
-#include"tracer.hpp"
-#include "COPStructures.hpp"
-#include"tracer.hpp"
+#include "tpi/TPI.hpp"
+#include "tpi/COP_fault_calculator.hpp"
+#include "trace/tracer.hpp"
+#include "cop/COPStructures.hpp"
+
  /*
   * COP-based TPI.
   *

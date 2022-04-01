@@ -1,6 +1,6 @@
 #pragma once
-#include "TPI.hpp"
-#include "TPI_COP.hpp"
+#include "tpi/TPI.hpp"
+#include "tpi/TPI_COP.hpp"
 #include"Propagate_fault_stucture.h"
 #include"Block_fault.h"
 
