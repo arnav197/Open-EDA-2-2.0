@@ -9,13 +9,13 @@
  */
 
 #include "gtest/gtest.h"
-#include "Circuit.h"
+#include "structures/Circuit.h"
 #include<unordered_set>
 
-#include "Simulator.hpp"
-#include "SimulationStructures.hpp"
-#include "Parser.hpp"
-#include "ValueVectorFunctions.hpp"
+#include "simulation/Simulator.hpp"
+#include "simulation/SimulationStructures.hpp"
+#include "parser/Parser.hpp"
+#include "simulation/ValueVectorFunctions.hpp"
 
 class DeleteTest : public ::testing::Test {
 public:

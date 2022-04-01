@@ -9,7 +9,7 @@
  */
 
 #include"gtest/gtest.h"
-#include"Connection.h"
+#include"structures/Connection.h"
 #include<vector>
 #include<algorithm>
 #include <unordered_set>
