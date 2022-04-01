@@ -15,7 +15,7 @@
 #include <unordered_set>
 #include <limits>
 
-#include "Connection.h"
+#include "structures/Connection.h"
 
 /*
  * This class models objects which are levelelized.

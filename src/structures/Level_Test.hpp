@@ -9,7 +9,7 @@
  */
 
 #include"gtest/gtest.h"
-#include"Level.h"
+#include"structures/Level.h"
 
 
 class LevelTest : public ::testing::Test {
