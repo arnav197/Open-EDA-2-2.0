@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Function_Test.hpp"
-#include "Value_Test.hpp"
-#include "SimulationStructure_Test.hpp"
-#include "Simulator_Test.hpp"
-#include "WideSimulator_Test.hpp"
+#include "simulation/Function_Test.hpp"
+#include "simulation/Value_Test.hpp"
+#include "simulation/SimulationStructure_Test.hpp"
+#include "simulation/Simulator_Test.hpp"
+#include "simulation/WideSimulator_Test.hpp"

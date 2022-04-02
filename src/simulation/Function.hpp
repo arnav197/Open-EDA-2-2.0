@@ -17,7 +17,7 @@
 #include <algorithm> //std::transform
 #include <cctype> //std::tolower
 
-#include "Value.hpp"
+#include "simulation/Value.hpp"
 #include "Connection.h"
 
 template <class T>

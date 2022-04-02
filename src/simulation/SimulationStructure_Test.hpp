@@ -9,8 +9,8 @@
  */
 
 #include "gtest/gtest.h"
-#include "SimulationStructures.hpp"
-#include "EventQueue.hpp"
+#include "simulation/SimulationStructures.hpp"
+#include "simulation/EventQueue.hpp"
 
 
 //SimulationLine()

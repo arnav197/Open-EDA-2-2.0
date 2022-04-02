@@ -9,7 +9,7 @@
  */
 
 #include"gtest/gtest.h"
-#include"Function.hpp"
+#include"simulation/Function.hpp"
 
 class BFuncTest : public ::testing::Test {
 public:

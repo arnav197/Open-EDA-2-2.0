@@ -11,11 +11,11 @@
 #ifndef SimulationStructures_h
 #define SimulationStructures_h
 
-#include "Value.hpp"
+#include "simulation/Value.hpp"
 #include "Level.h"
-#include "Function.hpp"
-#include "EventQueue.hpp"
-#include "SimulationNet.hpp"
+#include "simulation/Function.hpp"
+#include "simulation/EventQueue.hpp"
+#include "simulation/SimulationNet.hpp"
 #include <string>
 
 /*
