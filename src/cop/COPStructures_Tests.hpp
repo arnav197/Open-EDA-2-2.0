@@ -11,8 +11,8 @@
 #include <map>
 
 #include "gtest/gtest.h"
-#include "COPStructures.hpp"
-#include "Parser.hpp"
+#include "cop/COPStructures.hpp"
+#include "parser/Parser.hpp"
 
 class B19Test : public ::testing::Test {
 public:

@@ -12,9 +12,9 @@
 #ifndef COPSTructures_h
 #define COPSTructures_h
 
-#include "SimulationStructures.hpp"
-#include "ValueVectorFunctions.hpp"
-#include<cmath>
+#include "simulation/SimulationStructures.hpp"
+#include "simulation/ValueVectorFunctions.hpp"
+#include <cmath>
 
  /*
   * Controllability and observability information.

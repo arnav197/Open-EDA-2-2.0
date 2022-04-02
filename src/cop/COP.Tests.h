@@ -1,3 +1,3 @@
 #pragma once
 
-#include "COPStructures_Tests.hpp"
+#include "cop/COPStructures_Tests.hpp"
