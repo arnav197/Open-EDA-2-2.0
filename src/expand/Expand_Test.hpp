@@ -1,9 +1,9 @@
 #pragma once
 
 #include "gtest/gtest.h"
-#include "Expand.hpp"
-#include "SimulationStructures.hpp"
-#include "Parser.hpp"
+#include "expand/Expand.hpp"
+#include "simulation/SimulationStructures.hpp"
+#include "parser/Parser.hpp"
 #include "Circuit.h"
 
 class ExpandTest : public::testing::Test {
