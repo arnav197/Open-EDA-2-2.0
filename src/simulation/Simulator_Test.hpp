@@ -9,10 +9,10 @@
  */
 
 #include "gtest/gtest.h"
-#include "SimulationStructures.hpp"
-#include "Simulator.hpp"
-#include "ValueVectorFunctions.hpp"
-#include "Parser.hpp"
+#include "simulation/SimulationStructures.hpp"
+#include "simulation/Simulator.hpp"
+#include "simulation/ValueVectorFunctions.hpp"
+#include "parser/Parser.hpp"
 
 class SimulatorTest : public ::testing::Test {
 public:

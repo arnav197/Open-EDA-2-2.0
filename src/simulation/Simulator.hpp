@@ -13,11 +13,11 @@
 
 #include <vector>
 
-#include "Value.hpp"
+#include "simulation/Value.hpp"
 #include "Circuit.h"
-#include "Function.hpp"
-#include "SimulationStructures.hpp"
-#include "EventQueue.hpp"
+#include "simulation/Function.hpp"
+#include "simulation/SimulationStructures.hpp"
+#include "simulation/EventQueue.hpp"
 
 /*
  * A simulator which applies stimulus to a circuit and observes outputs.

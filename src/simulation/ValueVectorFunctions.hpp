@@ -16,7 +16,7 @@
 #include <algorithm> //rotate
 #include <typeinfo> //type_info
 
-#include "Value.hpp"
+#include "simulation/Value.hpp"
 
  /*
   * A static container for Value-containing vector manipulation.
