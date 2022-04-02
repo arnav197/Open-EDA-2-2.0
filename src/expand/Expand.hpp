@@ -10,12 +10,12 @@
 #pragma once
 #define Expand_h
 #include "Circuit.h"
-#include "Function.hpp"
-#include "SimulationNet.hpp"
-#include "SimulationStructures.hpp"
-#include "SimulationNet.hpp"
+#include "simulation/Function.hpp"
+#include "simulation/SimulationNet.hpp"
+#include "simulation/SimulationStructures.hpp"
+#include "simulation/SimulationNet.hpp"
 #include "Level.h"
-#include "Net.hpp"
+#include "simulation/Net.hpp"
 #include "Connection.h"
 #include <string>
 #include <utility> 
