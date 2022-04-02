@@ -16,7 +16,7 @@
 #include <limits>
 
 #include "Connection.h"
-#include "Value.hpp"
+#include "simulation/Value.hpp"
 
 /*
  * This object is capible of "tracing" forward and backwards and returning
