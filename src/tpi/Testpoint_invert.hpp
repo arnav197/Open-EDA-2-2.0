@@ -12,7 +12,7 @@
 #ifndef Testpoint_invert_h
 #define Testpoint_invert_h
 
-#include "Testpoint.hpp"
+#include "tpi/Testpoint.hpp"
 
 /*
  * A control testpoint (both control-0 and control-1).

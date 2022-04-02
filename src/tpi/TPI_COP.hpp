@@ -12,8 +12,8 @@
 #ifndef TPI_COP_h
 #define TPI_COP_h
 
-#include "TPI.hpp"
-#include "COP_fault_calculator.hpp"
+#include "tpi/TPI.hpp"
+#include "tpi/COP_fault_calculator.hpp"
 
 /*
  * COP-based TPI.

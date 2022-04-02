@@ -13,7 +13,7 @@
 
 #include <set>
 
-#include "Tracable.hpp"
+#include "trace/Tracable.hpp"
 
 #define ALL_CONDITIONS _returnNames, _returnValues, _backupNames, _backupValues, _stopNames, _stopValues
 

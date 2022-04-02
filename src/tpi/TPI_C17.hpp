@@ -11,17 +11,17 @@
  */
 
 #include"gtest/gtest.h"
-#include"TPI_COP.hpp"
+#include"tpi/TPI_COP.hpp"
 
-#include "Parser.hpp"
+#include "parser/Parser.hpp"
 #include "COP_TPI_Structures.hpp"
-#include "TPGenerator.hpp"
-#include "TPI_COP.hpp"
-#include "Testpoint_control.hpp"
-#include "Testpoint_invert.hpp"
-#include "Testpoint_observe.hpp"
-#include "FaultSimulator.hpp"
-#include "FaultyValue.hpp"
+#include "tpi/TPGenerator.hpp"
+#include "tpi/TPI_COP.hpp"
+#include "tpi/Testpoint_control.hpp"
+#include "tpi/Testpoint_invert.hpp"
+#include "tpi/Testpoint_observe.hpp"
+#include "faults/FaultSimulator.hpp"
+#include "faults/FaultyValue.hpp"
 
 #define VALUE FaultyValue<bool>
 #define NODETYPE COP_TPI_Node<VALUE>

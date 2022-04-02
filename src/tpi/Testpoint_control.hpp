@@ -12,9 +12,9 @@
 #ifndef Testpoint_control_h
 #define Testpoint_control_h
 
-#include "Testpoint.hpp"
-#include "FaultStructures.hpp"
-#include "Value.hpp"
+#include "tpi/Testpoint.hpp"
+#include "faults/FaultStructures.hpp"
+#include "simulation/Value.hpp"
 
  /*
   * A control testpoint (both control-0 and control-1).

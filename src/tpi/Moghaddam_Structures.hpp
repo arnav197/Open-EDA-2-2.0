@@ -13,12 +13,12 @@
 
 #include <vector>
 
-#include "Fault.hpp"
-#include "FaultStructures.hpp"
-#include "COPStructures.hpp"
+#include "faults/Fault.hpp"
+#include "faults/FaultStructures.hpp"
+#include "cop/COPStructures.hpp"
 #include "COP_TPI_Structures.hpp"
-#include "Function.hpp"
-#include "SimulationStructures.hpp"
+#include "simulation/Function.hpp"
+#include "simulation/SimulationStructures.hpp"
 
 
 

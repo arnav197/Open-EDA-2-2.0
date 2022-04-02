@@ -1,11 +1,11 @@
 #pragma once
 #include "gtest/gtest.h"
-#include"Window.hpp"
-#include "Simulator.hpp"
-#include "SimulationStructures.hpp"
-#include "Parser.hpp"
-#include"Circuit.h"
-#include"COPStructures.hpp"
+#include "window/Window.hpp"
+#include "simulation/Simulator.hpp"
+#include "simulation/SimulationStructures.hpp"
+#include "parser/Parser.hpp"
+#include "Circuit.h"
+#include "cop/COPStructures.hpp"
 
 class WindowTest : public::testing::Test {
 public:

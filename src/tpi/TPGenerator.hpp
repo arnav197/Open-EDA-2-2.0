@@ -15,7 +15,7 @@
 #include <unordered_set>
 
 #include "Circuit.h"
-#include "Testpoint.hpp"
+#include "tpi/Testpoint.hpp"
 
 /*
  * Create all TPs for a circuit.

@@ -12,10 +12,10 @@
 #ifndef COP_fault_calculator_h
 #define COP_fault_calculator_h
 
-#include "Circuit.h"
-#include "Fault.hpp"
-#include "FaultGenerator.hpp"
-#include "COPStructures.hpp"
+#include "structures/Circuit.h"
+#include "faults/Fault.hpp"
+#include "faults/FaultGenerator.hpp"
+#include "cop/COPStructures.hpp"
 
 /*
  * Calculates the fault coverage of a circuit using COP values.

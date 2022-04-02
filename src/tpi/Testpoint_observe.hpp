@@ -12,9 +12,9 @@
 #ifndef Testpoint_observe_h
 #define Testpoint_observe_h
 
-#include "Testpoint.hpp"
-#include "FaultStructures.hpp"
-#include "Value.hpp"
+#include "tpi/Testpoint.hpp"
+#include "faults/FaultStructures.hpp"
+#include "simulation/Value.hpp"
 
  /*
   * An observe testpoint.
