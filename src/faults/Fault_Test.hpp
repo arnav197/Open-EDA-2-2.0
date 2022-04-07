@@ -9,11 +9,11 @@
  */
 
 #include "gtest/gtest.h"
-#include "FaultStructures.hpp"
-#include "FaultGenerator.hpp"
-#include "Parser.hpp"
-#include "Fault.hpp"
-#include "FaultyValue.hpp"
+#include "faults/FaultStructures.hpp"
+#include "faults/FaultGenerator.hpp"
+#include "parser/Parser.hpp"
+#include "faults/Fault.hpp"
+#include "faults/FaultyValue.hpp"
 
 class FaultTest : public ::testing::Test {
 protected:

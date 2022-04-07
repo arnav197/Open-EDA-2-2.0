@@ -9,11 +9,11 @@
  */
 
 #include "gtest/gtest.h"
-#include "FaultSimulator.hpp"
-#include "FaultGenerator.hpp"
-#include "Parser.hpp"
-#include "ValueVectorFunctions.hpp"
-#include "FaultyValue.hpp"
+#include "faults/FaultSimulator.hpp"
+#include "faults/FaultGenerator.hpp"
+#include "parser/Parser.hpp"
+#include "simulation/ValueVectorFunctions.hpp"
+#include "faults/FaultyValue.hpp"
 
 class FaultSimTest : public ::testing::Test {
 public:

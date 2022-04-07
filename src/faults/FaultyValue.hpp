@@ -11,7 +11,7 @@
 #ifndef FaultyValue_h
 #define FaultyValue_h
 
-#include "Value.hpp"
+#include "simulation/Value.hpp"
 
 /*
  * A FaultyValue extends the functionality of a regular Value by modeling two-

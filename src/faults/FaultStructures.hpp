@@ -11,8 +11,8 @@
 #ifndef FaultStructures_h
 #define FaultStructures_h
 
-#include "SimulationStructures.hpp"
-#include "Fault.hpp"
+#include "simulation/SimulationStructures.hpp"
+#include "faults/Fault.hpp"
 
  //Forward declaration
 template <class _valueType>

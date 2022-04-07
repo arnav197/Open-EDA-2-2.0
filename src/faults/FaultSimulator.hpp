@@ -13,9 +13,9 @@
 
 #include <unordered_set>
 
-#include "Fault.hpp"
-#include "Simulator.hpp"
-#include "FaultyValue.hpp"
+#include "faults/Fault.hpp"
+#include "simulation/Simulator.hpp"
+#include "faults/FaultyValue.hpp"
 
  /*
   * A Simulator capible of performing fault simulation.

@@ -14,10 +14,10 @@
 #include <set>
 #include <unordered_map>
 
-#include "Fault.hpp"
+#include "faults/Fault.hpp"
 #include "Circuit.h"
-#include "SimulationStructures.hpp"
-#include "FaultStructures.hpp"
+#include "simulation/SimulationStructures.hpp"
+#include "faults/FaultStructures.hpp"
 
 /*
  * An object capible of populating a list of faults for a Circuit.

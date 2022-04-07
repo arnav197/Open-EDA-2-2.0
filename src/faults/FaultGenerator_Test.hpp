@@ -9,10 +9,10 @@
  */
 
 #include "gtest/gtest.h"
-#include "FaultGenerator.hpp"
-#include "FaultStructures.hpp"
-#include "Parser.hpp"
-#include "FaultyValue.hpp"
+#include "faults/FaultGenerator.hpp"
+#include "faults/FaultStructures.hpp"
+#include "parser/Parser.hpp"
+#include "faults/FaultyValue.hpp"
 
 #include <iostream>
 

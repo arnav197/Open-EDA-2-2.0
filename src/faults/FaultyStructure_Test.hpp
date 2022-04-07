@@ -9,8 +9,8 @@
  */
 
 #include "gtest/gtest.h"
-#include "FaultStructures.hpp"
-#include "FaultyValue.hpp"
+#include "faults/FaultStructures.hpp"
+#include "faults/FaultyValue.hpp"
 
 class FaultyLineTest : public ::testing::Test {
 public:

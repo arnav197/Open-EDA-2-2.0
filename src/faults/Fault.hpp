@@ -14,9 +14,9 @@
 #include <set>
 #include <vector>
 
-#include "Value.hpp"
-#include "EventQueue.hpp"
-#include "FaultStructures.hpp"
+#include "simulation/Value.hpp"
+#include "simulation/EventQueue.hpp"
+#include "faults/FaultStructures.hpp"
 
  // Forward declaration.
 template <class _valueType>

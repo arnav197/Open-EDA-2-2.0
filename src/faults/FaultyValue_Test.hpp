@@ -9,7 +9,7 @@
  */
 
 #include "gtest/gtest.h"
-#include "FaultyValue.hpp"
+#include "faults/FaultyValue.hpp"
 
 class FaultyValueTest : public ::testing::Test {
 public:
