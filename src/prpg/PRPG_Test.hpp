@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "PRPG.hpp"
+#include "prpg/PRPG.hpp"
 
 class PRPGTest : public ::testing::Test {
 public:

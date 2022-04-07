@@ -11,9 +11,9 @@
 #include <vector>
 #include <unordered_set>
 
-#include "Value.hpp"
-#include "ValueVectorFunctions.hpp"	//shift
-#include "Function.hpp" //XOR
+#include "simulation/Value.hpp"
+#include "simulation/ValueVectorFunctions.hpp"	//shift
+#include "simulation/Function.hpp" //XOR
 
 #ifndef PRPG_H
 #define PRPG_h
