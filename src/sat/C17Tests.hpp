@@ -14,9 +14,9 @@
 
 #include <cstdlib> //atoi
 
-#include "Parser.hpp"
-#include "SATStructures.hpp"
-#include "SAT.hpp"
+#include "parser/Parser.hpp"
+#include "sat/SATStructures.hpp"
+#include "sat/SAT.hpp"
 
 #define COMBINATION Combination<SATLine<Value<bool>>, SATNode<Value<bool>>, Value<bool>>
 

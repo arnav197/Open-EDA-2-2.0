@@ -11,11 +11,11 @@
 #ifndef SATStructures_h
 #define SATStructures_h
 
-#include "SimulationStructures.hpp"
-#include "Tracable.hpp"
-#include "Combination.hpp"
-#include "Value.hpp"
-#include "ValueVectorFunctions.hpp"
+#include "simulation/SimulationStructures.hpp"
+#include "trace/Tracable.hpp"
+#include "sat/Combination.hpp"
+#include "simulation/Value.hpp"
+#include "simulation/ValueVectorFunctions.hpp"
 
 //Forward declaration
 template <class _valueType>

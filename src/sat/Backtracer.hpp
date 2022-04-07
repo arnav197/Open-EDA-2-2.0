@@ -16,7 +16,7 @@
 #include <iostream>
 #include <stack>
 
-#include "ImplicationStack.hpp"
+#include "sat/ImplicationStack.hpp"
 
 /*
  * A backtracer takes one (or more) lines and values in a circuit and will 

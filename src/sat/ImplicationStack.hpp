@@ -14,8 +14,8 @@
 #include <stack>
 #include <vector>
 
-#include "EventQueue.hpp"
-#include "Value.hpp"
+#include "simulation/EventQueue.hpp"
+#include "simulation/Value.hpp"
 
 /*
  * AlternativeEvents are extensions to EventQueue events (no functions are

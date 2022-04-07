@@ -1,4 +1,4 @@
 #pragma once
 
 //#include "ATPGTests.hpp"
-#include "C17Tests.hpp"
+#include "sat/C17Tests.hpp"

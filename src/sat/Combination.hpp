@@ -14,10 +14,10 @@
 #include <unordered_set>
 #include <vector>
 
-#include "Value.hpp"
-#include "ValueVectorFunctions.hpp"
-#include "Function.hpp"
-#include "Goal.hpp"
+#include "simulation/Value.hpp"
+#include "simulation/ValueVectorFunctions.hpp"
+#include "simulation/Function.hpp"
+#include "sat/Goal.hpp"
 
 /*
  * A combination of circuit Lines at a set of Values in a circuit.

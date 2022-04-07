@@ -14,10 +14,10 @@
 #include <ctime>
 #include <algorithm>
 
-#include "Goal.hpp"
-#include "ImplicationStack.hpp"
-#include "Backtracer.hpp"
-#include "EventQueue.hpp"
+#include "sat/Goal.hpp"
+#include "sat/ImplicationStack.hpp"
+#include "sat/Backtracer.hpp"
+#include "simulation/EventQueue.hpp"
 
 
 /*
