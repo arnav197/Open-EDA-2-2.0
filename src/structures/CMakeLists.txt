@@ -4,9 +4,10 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(structures)
-add_executable(OpenEDA_structures.cpp)
-
-
-
 enable_testing()
-add_test( NAME structures_test COMMAND  $<TARGET_FILE:OpenEDA_structures>)
+
+
+
+
+
+add_test( NAME structures_test COMMAND structures_tests)

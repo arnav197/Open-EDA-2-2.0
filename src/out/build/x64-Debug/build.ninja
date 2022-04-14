@@ -40,41 +40,185 @@ include CMakeFiles\rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:\Users\Arnav\Downloads\Open$ EDA$ 2-2.0\src\out\build\x64-Debug\
-# =============================================================================
-# Object build statements for EXECUTABLE target OpenEDA_executable
+
+#############################################
+# Utility command for Experimental
+
+build Experimental: phony CMakeFiles\Experimental
 
 
 #############################################
-# Order-only phony target for OpenEDA_executable
+# Utility command for Nightly
 
-build cmake_object_order_depends_target_OpenEDA_executable: phony || CMakeFiles\OpenEDA_executable.dir
-
-build CMakeFiles\OpenEDA_executable.dir\main.cpp.obj: CXX_COMPILER__OpenEDA_executable_Debug C$:\Users\Arnav\Downloads\Open$ EDA$ 2-2.0\src\main.cpp || cmake_object_order_depends_target_OpenEDA_executable
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  OBJECT_DIR = CMakeFiles\OpenEDA_executable.dir
-  OBJECT_FILE_DIR = CMakeFiles\OpenEDA_executable.dir
-  TARGET_COMPILE_PDB = CMakeFiles\OpenEDA_executable.dir\
-  TARGET_PDB = OpenEDA_executable.pdb
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target OpenEDA_executable
+build Nightly: phony CMakeFiles\Nightly
 
 
 #############################################
-# Link the executable OpenEDA_executable.exe
+# Utility command for Continuous
 
-build OpenEDA_executable.exe: CXX_EXECUTABLE_LINKER__OpenEDA_executable_Debug CMakeFiles\OpenEDA_executable.dir\main.cpp.obj
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\OpenEDA_executable.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\OpenEDA_executable.dir\
-  TARGET_FILE = OpenEDA_executable.exe
-  TARGET_IMPLIB = OpenEDA_executable.lib
-  TARGET_PDB = OpenEDA_executable.pdb
+build Continuous: phony CMakeFiles\Continuous
+
+
+#############################################
+# Utility command for NightlyMemoryCheck
+
+build NightlyMemoryCheck: phony CMakeFiles\NightlyMemoryCheck
+
+
+#############################################
+# Utility command for NightlyStart
+
+build NightlyStart: phony CMakeFiles\NightlyStart
+
+
+#############################################
+# Utility command for NightlyUpdate
+
+build NightlyUpdate: phony CMakeFiles\NightlyUpdate
+
+
+#############################################
+# Utility command for NightlyConfigure
+
+build NightlyConfigure: phony CMakeFiles\NightlyConfigure
+
+
+#############################################
+# Utility command for NightlyBuild
+
+build NightlyBuild: phony CMakeFiles\NightlyBuild
+
+
+#############################################
+# Utility command for NightlyTest
+
+build NightlyTest: phony CMakeFiles\NightlyTest
+
+
+#############################################
+# Utility command for NightlyCoverage
+
+build NightlyCoverage: phony CMakeFiles\NightlyCoverage
+
+
+#############################################
+# Utility command for NightlyMemCheck
+
+build NightlyMemCheck: phony CMakeFiles\NightlyMemCheck
+
+
+#############################################
+# Utility command for NightlySubmit
+
+build NightlySubmit: phony CMakeFiles\NightlySubmit
+
+
+#############################################
+# Utility command for ExperimentalStart
+
+build ExperimentalStart: phony CMakeFiles\ExperimentalStart
+
+
+#############################################
+# Utility command for ExperimentalUpdate
+
+build ExperimentalUpdate: phony CMakeFiles\ExperimentalUpdate
+
+
+#############################################
+# Utility command for ExperimentalConfigure
+
+build ExperimentalConfigure: phony CMakeFiles\ExperimentalConfigure
+
+
+#############################################
+# Utility command for ExperimentalBuild
+
+build ExperimentalBuild: phony CMakeFiles\ExperimentalBuild
+
+
+#############################################
+# Utility command for ExperimentalTest
+
+build ExperimentalTest: phony CMakeFiles\ExperimentalTest
+
+
+#############################################
+# Utility command for ExperimentalCoverage
+
+build ExperimentalCoverage: phony CMakeFiles\ExperimentalCoverage
+
+
+#############################################
+# Utility command for ExperimentalMemCheck
+
+build ExperimentalMemCheck: phony CMakeFiles\ExperimentalMemCheck
+
+
+#############################################
+# Utility command for ExperimentalSubmit
+
+build ExperimentalSubmit: phony CMakeFiles\ExperimentalSubmit
+
+
+#############################################
+# Utility command for ContinuousStart
+
+build ContinuousStart: phony CMakeFiles\ContinuousStart
+
+
+#############################################
+# Utility command for ContinuousUpdate
+
+build ContinuousUpdate: phony CMakeFiles\ContinuousUpdate
+
+
+#############################################
+# Utility command for ContinuousConfigure
+
+build ContinuousConfigure: phony CMakeFiles\ContinuousConfigure
+
+
+#############################################
+# Utility command for ContinuousBuild
+
+build ContinuousBuild: phony CMakeFiles\ContinuousBuild
+
+
+#############################################
+# Utility command for ContinuousTest
+
+build ContinuousTest: phony CMakeFiles\ContinuousTest
+
+
+#############################################
+# Utility command for ContinuousCoverage
+
+build ContinuousCoverage: phony CMakeFiles\ContinuousCoverage
+
+
+#############################################
+# Utility command for ContinuousMemCheck
+
+build ContinuousMemCheck: phony CMakeFiles\ContinuousMemCheck
+
+
+#############################################
+# Utility command for ContinuousSubmit
+
+build ContinuousSubmit: phony CMakeFiles\ContinuousSubmit
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles\test.util
 
 
 #############################################
@@ -99,10 +243,712 @@ build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
+
+#############################################
+# Custom command for CMakeFiles\Experimental
+
+build CMakeFiles\Experimental | ${cmake_ninja_workdir}CMakeFiles\Experimental: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D Experimental"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\Nightly
+
+build CMakeFiles\Nightly | ${cmake_ninja_workdir}CMakeFiles\Nightly: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D Nightly"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\Continuous
+
+build CMakeFiles\Continuous | ${cmake_ninja_workdir}CMakeFiles\Continuous: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D Continuous"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyMemoryCheck
+
+build CMakeFiles\NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles\NightlyMemoryCheck: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D NightlyMemoryCheck"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyStart
+
+build CMakeFiles\NightlyStart | ${cmake_ninja_workdir}CMakeFiles\NightlyStart: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D NightlyStart"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyUpdate
+
+build CMakeFiles\NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles\NightlyUpdate: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D NightlyUpdate"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyConfigure
+
+build CMakeFiles\NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles\NightlyConfigure: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D NightlyConfigure"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyBuild
+
+build CMakeFiles\NightlyBuild | ${cmake_ninja_workdir}CMakeFiles\NightlyBuild: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D NightlyBuild"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyTest
+
+build CMakeFiles\NightlyTest | ${cmake_ninja_workdir}CMakeFiles\NightlyTest: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D NightlyTest"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyCoverage
+
+build CMakeFiles\NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles\NightlyCoverage: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D NightlyCoverage"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyMemCheck
+
+build CMakeFiles\NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles\NightlyMemCheck: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D NightlyMemCheck"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlySubmit
+
+build CMakeFiles\NightlySubmit | ${cmake_ninja_workdir}CMakeFiles\NightlySubmit: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D NightlySubmit"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalStart
+
+build CMakeFiles\ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles\ExperimentalStart: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ExperimentalStart"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalUpdate
+
+build CMakeFiles\ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles\ExperimentalUpdate: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ExperimentalUpdate"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalConfigure
+
+build CMakeFiles\ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles\ExperimentalConfigure: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ExperimentalConfigure"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalBuild
+
+build CMakeFiles\ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles\ExperimentalBuild: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ExperimentalBuild"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalTest
+
+build CMakeFiles\ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles\ExperimentalTest: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ExperimentalTest"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalCoverage
+
+build CMakeFiles\ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles\ExperimentalCoverage: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ExperimentalCoverage"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalMemCheck
+
+build CMakeFiles\ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles\ExperimentalMemCheck: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ExperimentalMemCheck"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalSubmit
+
+build CMakeFiles\ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles\ExperimentalSubmit: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ExperimentalSubmit"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousStart
+
+build CMakeFiles\ContinuousStart | ${cmake_ninja_workdir}CMakeFiles\ContinuousStart: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ContinuousStart"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousUpdate
+
+build CMakeFiles\ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles\ContinuousUpdate: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ContinuousUpdate"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousConfigure
+
+build CMakeFiles\ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles\ContinuousConfigure: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ContinuousConfigure"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousBuild
+
+build CMakeFiles\ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles\ContinuousBuild: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ContinuousBuild"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousTest
+
+build CMakeFiles\ContinuousTest | ${cmake_ninja_workdir}CMakeFiles\ContinuousTest: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ContinuousTest"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousCoverage
+
+build CMakeFiles\ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles\ContinuousCoverage: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ContinuousCoverage"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousMemCheck
+
+build CMakeFiles\ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles\ContinuousMemCheck: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ContinuousMemCheck"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousSubmit
+
+build CMakeFiles\ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles\ContinuousSubmit: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -D ContinuousSubmit"
+  pool = console
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build parser\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\parser" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build parser\test: phony parser\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build parser\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\parser" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build parser\edit_cache: phony parser\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build parser\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\parser" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src" -B"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build parser\rebuild_cache: phony parser\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build atpg\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\atpg" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build atpg\test: phony atpg\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build atpg\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\atpg" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build atpg\edit_cache: phony atpg\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build atpg\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\atpg" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src" -B"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build atpg\rebuild_cache: phony atpg\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build cop\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\cop" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build cop\test: phony cop\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build cop\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\cop" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build cop\edit_cache: phony cop\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build cop\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\cop" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src" -B"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build cop\rebuild_cache: phony cop\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build expand\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\expand" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build expand\test: phony expand\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build expand\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\expand" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build expand\edit_cache: phony expand\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build expand\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\expand" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src" -B"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build expand\rebuild_cache: phony expand\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build faults\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\faults" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build faults\test: phony faults\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build faults\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\faults" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build faults\edit_cache: phony faults\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build faults\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\faults" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src" -B"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build faults\rebuild_cache: phony faults\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build prpg\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\prpg" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build prpg\test: phony prpg\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build prpg\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\prpg" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build prpg\edit_cache: phony prpg\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build prpg\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\prpg" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src" -B"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build prpg\rebuild_cache: phony prpg\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build sat\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\sat" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build sat\test: phony sat\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build sat\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\sat" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build sat\edit_cache: phony sat\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build sat\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\sat" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src" -B"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build sat\rebuild_cache: phony sat\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build simulation\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\simulation" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build simulation\test: phony simulation\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build simulation\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\simulation" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build simulation\edit_cache: phony simulation\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build simulation\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\simulation" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src" -B"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build simulation\rebuild_cache: phony simulation\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build structures\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\structures" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build structures\test: phony structures\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build structures\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\structures" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build structures\edit_cache: phony structures\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build structures\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\structures" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src" -B"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build structures\rebuild_cache: phony structures\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build tpi\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\tpi" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build tpi\test: phony tpi\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build tpi\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\tpi" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tpi\edit_cache: phony tpi\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tpi\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\tpi" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src" -B"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tpi\rebuild_cache: phony tpi\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build trace\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\trace" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build trace\test: phony trace\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build trace\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\trace" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build trace\edit_cache: phony trace\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build trace\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\trace" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src" -B"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build trace\rebuild_cache: phony trace\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build window\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\window" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build window\test: phony window\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build window\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\window" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build window\edit_cache: phony window\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build window\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug\window" && "F:\Visual Studio Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src" -B"C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build window\rebuild_cache: phony window\CMakeFiles\rebuild_cache.util
+
 # =============================================================================
 # Target aliases.
-
-build OpenEDA_executable: phony OpenEDA_executable.exe
 
 # =============================================================================
 # Folder targets.
@@ -112,7 +958,91 @@ build OpenEDA_executable: phony OpenEDA_executable.exe
 #############################################
 # Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug
 
-build all: phony OpenEDA_executable.exe
+build all: phony parser\all atpg\all cop\all expand\all faults\all prpg\all sat\all simulation\all structures\all tpi\all trace\all window\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/atpg
+
+build atpg\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/cop
+
+build cop\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/expand
+
+build expand\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/faults
+
+build faults\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/parser
+
+build parser\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/prpg
+
+build prpg\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/sat
+
+build sat\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/simulation
+
+build simulation\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/structures
+
+build structures\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/tpi
+
+build tpi\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/trace
+
+build trace\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/window
+
+build window\all: phony
 
 # =============================================================================
 # Built-in targets
@@ -121,14 +1051,14 @@ build all: phony OpenEDA_executable.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt CMakeCache.txt CMakeFiles\3.22.22022201-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.22.22022201-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.22.22022201-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.22.22022201-MSVC_2\CMakeSystem.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\atpg\CMakeLists.txt ..\..\..\cop\CMakeLists.txt ..\..\..\expand\CMakeLists.txt ..\..\..\faults\CMakeLists.txt ..\..\..\parser\CMakeLists.txt ..\..\..\prpg\CMakeLists.txt ..\..\..\sat\CMakeLists.txt ..\..\..\simulation\CMakeLists.txt ..\..\..\structures\CMakeLists.txt ..\..\..\tpi\CMakeLists.txt ..\..\..\trace\CMakeLists.txt ..\..\..\window\CMakeLists.txt CMakeCache.txt CMakeFiles\3.22.22022201-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.22.22022201-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.22.22022201-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.22.22022201-MSVC_2\CMakeSystem.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CTest.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CTestTargets.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CTestUseLaunchers.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\DartConfiguration.tcl.in F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt CMakeCache.txt CMakeFiles\3.22.22022201-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.22.22022201-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.22.22022201-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.22.22022201-MSVC_2\CMakeSystem.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\atpg\CMakeLists.txt ..\..\..\cop\CMakeLists.txt ..\..\..\expand\CMakeLists.txt ..\..\..\faults\CMakeLists.txt ..\..\..\parser\CMakeLists.txt ..\..\..\prpg\CMakeLists.txt ..\..\..\sat\CMakeLists.txt ..\..\..\simulation\CMakeLists.txt ..\..\..\structures\CMakeLists.txt ..\..\..\tpi\CMakeLists.txt ..\..\..\trace\CMakeLists.txt ..\..\..\window\CMakeLists.txt CMakeCache.txt CMakeFiles\3.22.22022201-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.22.22022201-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.22.22022201-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.22.22022201-MSVC_2\CMakeSystem.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CTest.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CTestTargets.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CTestUseLaunchers.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\DartConfiguration.tcl.in F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake F$:\Visual$ Studio$ Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake: phony
 
 
 #############################################

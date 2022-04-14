@@ -4,9 +4,10 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(tpi)
-add_executable(OpenEDA_tpi.cpp)
-
-
-
 enable_testing()
-add_test( NAME tpi_test COMMAND  $<TARGET_FILE:OpenEDA_tpi>)
+
+
+
+
+
+add_test( NAME tpi_test COMMAND  tpi_tests)

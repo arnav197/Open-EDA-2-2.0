@@ -32,6 +32,23 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/parser/cmake_install.cmake")
+  include("C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/atpg/cmake_install.cmake")
+  include("C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/cop/cmake_install.cmake")
+  include("C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/expand/cmake_install.cmake")
+  include("C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/faults/cmake_install.cmake")
+  include("C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/prpg/cmake_install.cmake")
+  include("C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/sat/cmake_install.cmake")
+  include("C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/simulation/cmake_install.cmake")
+  include("C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/structures/cmake_install.cmake")
+  include("C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/tpi/cmake_install.cmake")
+  include("C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/trace/cmake_install.cmake")
+  include("C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/window/cmake_install.cmake")
+
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

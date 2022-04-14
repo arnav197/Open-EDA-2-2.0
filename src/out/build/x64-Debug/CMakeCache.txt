@@ -232,6 +232,114 @@ OpenEDA-2.0_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src
 //Name of the computer/site where compile is being run
 SITE:STRING=DESKTOP-SS6I3E4
 
+//Value Computed by CMake
+atpg_BINARY_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/atpg
+
+//Value Computed by CMake
+atpg_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+atpg_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/atpg
+
+//Value Computed by CMake
+cop_BINARY_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/cop
+
+//Value Computed by CMake
+cop_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+cop_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/cop
+
+//Value Computed by CMake
+expand_BINARY_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/expand
+
+//Value Computed by CMake
+expand_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+expand_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/expand
+
+//Value Computed by CMake
+faults_BINARY_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/faults
+
+//Value Computed by CMake
+faults_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+faults_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/faults
+
+//Value Computed by CMake
+parser_BINARY_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/parser
+
+//Value Computed by CMake
+parser_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+parser_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/parser
+
+//Value Computed by CMake
+prpg_BINARY_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/prpg
+
+//Value Computed by CMake
+prpg_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+prpg_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/prpg
+
+//Value Computed by CMake
+sat_BINARY_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/sat
+
+//Value Computed by CMake
+sat_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+sat_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/sat
+
+//Value Computed by CMake
+simulation_BINARY_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/simulation
+
+//Value Computed by CMake
+simulation_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+simulation_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/simulation
+
+//Value Computed by CMake
+structures_BINARY_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/structures
+
+//Value Computed by CMake
+structures_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+structures_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/structures
+
+//Value Computed by CMake
+tpi_BINARY_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/tpi
+
+//Value Computed by CMake
+tpi_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+tpi_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/tpi
+
+//Value Computed by CMake
+trace_BINARY_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/trace
+
+//Value Computed by CMake
+trace_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+trace_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/trace
+
+//Value Computed by CMake
+window_BINARY_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/out/build/x64-Debug/window
+
+//Value Computed by CMake
+window_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+window_SOURCE_DIR:STATIC=C:/Users/Arnav/Downloads/Open EDA 2-2.0/src/window
+
 
 ########################
 # INTERNAL cache entries
@@ -325,7 +433,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

@@ -4,9 +4,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(faults)
-add_executable(OpenEDA_faults.cpp)
-
-
 
 enable_testing()
-add_test( NAME faults_test COMMAND  $<TARGET_FILE:OpenEDA_faults>)
+
+
+
+add_test( NAME faults_test COMMAND faults_tests)

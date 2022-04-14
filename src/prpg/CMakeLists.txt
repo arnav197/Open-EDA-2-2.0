@@ -4,9 +4,11 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(prpg)
-add_executable(OpenEDA_prpg.cpp)
+
+enable_testing()
+
 
 
 
 enable_testing()
-add_test( NAME prpg_test COMMAND  $<TARGET_FILE:OpenEDA_prpg>)
+add_test( NAME prpg_test COMMAND  prpg_tests)

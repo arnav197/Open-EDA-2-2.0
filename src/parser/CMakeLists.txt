@@ -4,9 +4,11 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(parser)
-add_executable(OpenEDA_parser.cpp)
+
+enable_testing()
+
 
 
 
 enable_testing()
-add_test( NAME parser_test COMMAND  $<TARGET_FILE:OpenEDA_parser>)
+add_test( NAME parser_test COMMAND  parser_tests)

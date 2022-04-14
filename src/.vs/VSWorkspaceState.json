@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\parser",
-    "\\prpg",
-    "\\simulation"
+    "\\simulation",
+    "\\window"
   ],
-  "SelectedNode": "\\parser",
+  "SelectedNode": "\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }

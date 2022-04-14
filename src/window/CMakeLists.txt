@@ -4,9 +4,10 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(window)
-add_executable(OpenEDA_window.cpp)
+enable_testing()
+
 
 
 
 enable_testing()
-add_test( NAME window_test COMMAND  $<TARGET_FILE:OpenEDA_window>)
+add_test( NAME window_test COMMAND  window_test.cpp)
