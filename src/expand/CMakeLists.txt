@@ -4,10 +4,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(expand)
+
+include(GoogleTest)
 enable_testing()
 
 
-
-
-
-add_test( NAME expand_test COMMAND  expand_tests)
+add_executable(expand_tests.cpp expand_test.cpp)

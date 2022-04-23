@@ -5,10 +5,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 project(prpg)
 
+include(GoogleTest)
 enable_testing()
 
 
-
-
-enable_testing()
-add_test( NAME prpg_test COMMAND  prpg_tests)
+add_executable(prpg_tests.cpp prpg_test.cpp)

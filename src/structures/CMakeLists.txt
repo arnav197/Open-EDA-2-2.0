@@ -4,10 +4,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(structures)
+
+include(GoogleTest)
 enable_testing()
 
 
-
-
-
-add_test( NAME structures_test COMMAND structures_tests)
+add_executable(structure_tests.cpp structures_test.cpp)

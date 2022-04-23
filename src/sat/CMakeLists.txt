@@ -4,10 +4,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(sat)
+
+include(GoogleTest)
 enable_testing()
 
 
-
-
-
-add_test( NAME sat_test COMMAND  sat_tests)
+add_executable(sat_tests.cpp sat_test.cpp)

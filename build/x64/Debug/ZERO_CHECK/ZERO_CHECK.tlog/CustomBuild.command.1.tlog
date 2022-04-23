@@ -1,0 +1,10 @@
+^C:\USERS\ARNAV\DOWNLOADS\OPEN EDA 2-2.0\BUILD\CMAKEFILES\ABB85797C9B2786386A065ECB0142C06\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Arnav/Downloads/Open EDA 2-2.0/src" "-BC:/Users/Arnav/Downloads/Open EDA 2-2.0/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Arnav/Downloads/Open EDA 2-2.0/build/OpenEDA-2.0.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

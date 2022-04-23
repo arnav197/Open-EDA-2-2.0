@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
-#include "atpg/ATPG.Tests.h"
+#include"ATPG.Tests.h"
 
-//int main() {
-//	return RUN_ALL_TESTS();
-//}
+int main() {
+	return RUN_ALL_TESTS();
+}

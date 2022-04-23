@@ -5,10 +5,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 project(parser)
 
+include(GoogleTest)
 enable_testing()
 
 
-
-
-enable_testing()
-add_test( NAME parser_test COMMAND  parser_tests)
+add_executable(parser_tests.cpp parser_test.cpp)

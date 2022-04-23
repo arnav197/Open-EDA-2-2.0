@@ -4,9 +4,13 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(atpg)
+include(GoogleTest)
 enable_testing()
 
 
+add_executable(atpg_tests.cpp atpg_test.cpp)
 
 
-add_test( NAME atpg_test COMMAND  atpg_tests)
+
+
+

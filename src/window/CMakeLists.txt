@@ -4,10 +4,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(window)
+
+include(GoogleTest)
 enable_testing()
 
 
-
-
-enable_testing()
-add_test( NAME window_test COMMAND  window_test.cpp)
+add_executable(window_tests.cpp window_test.cpp)

@@ -4,9 +4,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(cop)
+
+include(GoogleTest)
 enable_testing()
 
 
-
-
-add_test( NAME cop_test COMMAND  cop_test.cpp)
+add_executable(cop_tests.cpp cop_test.cpp)

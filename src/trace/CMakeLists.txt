@@ -4,11 +4,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(trace)
+
+include(GoogleTest)
 enable_testing()
 
 
-
-
-
-
-add_test( NAME trace_test COMMAND  trace_tests)
+add_executable(trace_tests.cpp trace_test.cpp)

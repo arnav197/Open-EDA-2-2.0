@@ -1,10 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\parser",
-    "\\simulation",
-    "\\window"
+    "\\faults",
+    "\\PACKAGES",
+    "\\PACKAGES\\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0",
+    "\\PACKAGES\\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-static.1.8.0",
+    "\\PACKAGES\\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-static.1.8.0\\build",
+    "\\PACKAGES\\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-static.1.8.0\\build\\native",
+    "\\PACKAGES\\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-static.1.8.0\\build\\native\\include",
+    "\\PACKAGES\\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-static.1.8.0\\build\\native\\include\\gtest"
   ],
-  "SelectedNode": "\\CMakeLists.txt",
+  "SelectedNode": "\\faults\\faults_test.cpp",
   "PreviewInSolutionExplorer": false
 }

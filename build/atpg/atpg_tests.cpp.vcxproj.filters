@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\atpg\atpg_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Arnav\Downloads\Open EDA 2-2.0\src\atpg\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{56B1EB8E-3ABF-3696-9C50-6F08026D02C2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

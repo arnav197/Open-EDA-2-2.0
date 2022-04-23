@@ -1,0 +1,69 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "atpg_tests.cpp::@a0d1f1b48a14f054bbd5"
+		},
+		{
+			"id" : "cop_tests.cpp::@fdc84c5e831fbdc34f1c"
+		},
+		{
+			"id" : "expand_tests.cpp::@02400b5b176be434f940"
+		},
+		{
+			"id" : "faults_tests.cpp::@1e9a3a62de5b6e05fd08"
+		},
+		{
+			"id" : "prpg_tests.cpp::@ed1b796f2f5bc52211af"
+		},
+		{
+			"id" : "parser_tests.cpp::@72798c8d109b1720528b"
+		},
+		{
+			"id" : "sat_tests.cpp::@1c5255f7e80c36adbee8"
+		},
+		{
+			"id" : "trace_tests.cpp::@f822a431ca5e91e3b6b3"
+		},
+		{
+			"id" : "structure_tests.cpp::@8743c74f1b817c72b55d"
+		},
+		{
+			"id" : "simulation_tests.cpp::@89136c58eceb12a71fe8"
+		},
+		{
+			"id" : "window_tests.cpp::@042a9f56126fb90ddaf9"
+		},
+		{
+			"id" : "tpi_tests.cpp::@c2bd8ccc3fcb6063b64b"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

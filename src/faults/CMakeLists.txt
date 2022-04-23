@@ -5,8 +5,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 project(faults)
 
+include(GoogleTest)
 enable_testing()
 
 
-
-add_test( NAME faults_test COMMAND faults_tests)
+add_executable(faults_tests.cpp faults_test.cpp)

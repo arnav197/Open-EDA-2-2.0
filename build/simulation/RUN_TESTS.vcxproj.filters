@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Arnav\Downloads\Open EDA 2-2.0\build\CMakeFiles\b382ab4b99506ecdd0800c0a793f701c\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{72654EC3-DBF6-3F4A-ABC6-5BCF94C04C35}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

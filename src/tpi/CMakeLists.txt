@@ -4,10 +4,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 project(tpi)
+
+include(GoogleTest)
 enable_testing()
 
 
-
-
-
-add_test( NAME tpi_test COMMAND  tpi_tests)
+add_executable(tpi_tests.cpp tpi_test.cpp)

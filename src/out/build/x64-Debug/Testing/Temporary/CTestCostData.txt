@@ -1,0 +1,24 @@
+parser_test 0 0
+atpg_test 0 0
+cop_test 0 0
+expand_test 0 0
+faults_test 0 0
+prpg_test 0 0
+sat_test 0 0
+simulation_test 0 0
+structures_test 0 0
+tpi_test 0 0
+trace_test 0 0
+window_test 0 0
+---
+parser_test
+cop_test
+expand_test
+faults_test
+prpg_test
+sat_test
+simulation_test
+structures_test
+tpi_test
+trace_test
+window_test
